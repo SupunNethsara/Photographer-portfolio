@@ -1,0 +1,151 @@
+.services-feedback{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    
+}
+.services-feedback>div{
+    margin: 5px;
+}
+.services-feedback .model{
+    width: 65%;
+    height: 100%;
+    padding: 20px;
+    /* border: 2px solid rgba(153, 150, 150, 0.1); */
+    border-radius: 20px;
+}
+.services-feedback .feedback{
+    width: 35%;
+    height: 100%;
+    position: relative;
+     border: 1px solid gray ;
+     border-radius: 20px;
+    border: 2px solid rgba(153, 150, 150, 0.1);
+    background:  transparent;
+      overflow: auto;
+}
+
+.services-feedback .model .heading h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #1370fa;
+    text-transform: uppercase;
+    
+
+}
+.services-feedback .model .heading h2{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1;
+
+}
+.services-feedback .model .heading p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #b0b0b0;
+    margin-top: 20px;
+    word-spacing: 2px;
+    
+  
+}
+.boxes-serv{
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  display: grid;
+}
+.boxes-serv .row{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+.boxes-serv .row .boxs{
+  width: 100%;
+  height: auto;
+  margin: 10px;
+  padding: 12px;
+  background:  #191d2b;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+.boxes-serv .row .boxs i{
+  font-size: 40px;
+  color: #1370fa;
+}
+.boxes-serv .row .boxs h2{
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 500;
+}
+.boxes-serv .row .boxs p{
+  color: #b0b0b0;
+  font-size: 13px;
+}
+.boxes-serv .row .boxs button{
+  width: 200px;
+  height: auto;
+  padding: 12px;
+  background-color: #1370fa;
+  color: #fff;
+  margin-top: 16px;
+  border: 1px solid #1370fa;
+  border-radius: 20px;
+}
+
+@media (min-width: 800px) and (max-width: 1200px){
+  .services-feedback{
+    flex-wrap: wrap;
+  padding: 8px;
+}
+
+.services-feedback .model{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+   
+}
+.services-feedback .feedback{
+    width: 100%;
+    height: auto;
+    margin:40px;
+    
+
+}
+
+
+}
+
+@media (min-width: 200px) and (max-width: 800px){
+  .services-feedback{
+    flex-wrap: wrap;
+    height: auto;
+  padding: 5px;
+  display: flex;
+}
+
+.services-feedback .model{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    
+    order: 1;
+   
+}
+.services-feedback .feedback{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-top: 40px;
+    order: 2;
+
+}
+.boxes-serv .row{
+flex-wrap: wrap;
+}
+}

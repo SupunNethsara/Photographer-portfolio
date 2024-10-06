@@ -1,0 +1,108 @@
+.feedback-main{
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.t-title {
+  color: #f0eaea;
+  margin: 20px;
+  font-size: 20px;
+}
+
+.card {
+  width: auto;
+  height: auto;
+  margin: 15px 10px 12px 10px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background-color: #0a1b3a;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  ;
+  cursor: pointer;
+}
+
+.card img {
+  max-width: 65px;
+  border-radius: 100%;
+}
+
+.card__content {
+  display: flex;
+  gap: 1rem;
+}
+
+.card__content span i {
+  font-size: 2rem;
+  color:#6fa3f1;
+}
+
+.card__details p {
+  font-style: italic;
+  color: #b0b3b8;
+  margin-bottom: 1rem;
+  font-size: 13px;
+}
+
+.card__details h4 {
+  text-align: right;
+  color: #5293f5;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Feedback form styles */
+.feedback-input {
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+
+.feedback-textarea {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #1c2239;
+  color: #dcdcdc;
+  margin-top: 20px;
+
+}
+
+.feedback-textarea::placeholder {
+  color: #6b6f7a;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-end;
+  width: 100%;
+  color: #ffffff;
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #050533;
+  border-radius: 8px;
+
+}
+
+.submit-btn:hover {
+  background-color: #1e73be;
+}
+
+@media (min-width: 200px) and (max-width: 800px){
+  .card {
+    flex-wrap: wrap;
+  }
+ 
+}

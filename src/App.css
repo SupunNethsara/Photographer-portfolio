@@ -1,0 +1,42 @@
+p{
+  font-family: "Montserrat", sans-serif;
+}
+.main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+}
+.sidebar{
+  width: auto;
+  height: 100vh;
+position: relative;
+z-index: 10;
+}
+.drawer{
+  position: relative;
+  width: 100%;
+ height: 100vh;
+ overflow-y: auto;
+ /* background:linear-gradient(to right ,rgb(8, 8, 8),#1f1e1e, black,rgb(39, 38, 38)); */
+ background:linear-gradient(135deg,#121e31,#0D0D0D );
+}
+
+
+
+
+
+@media (min-width: 200px) and (max-width: 800px) {
+  .drawer{
+    width: 100%;
+   height: 100vh;
+   overflow-y: auto;
+    background: white;
+    background:linear-gradient(135deg,#1A2B48,#0D0D0D );
+    
+  }
+  .sidebar{
+   z-index: 10;
+ 
+  }
+}
