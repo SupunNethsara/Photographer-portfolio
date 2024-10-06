@@ -9,21 +9,24 @@ export const Photographer = () => {
             <img src="../src/assets/beach3.jpg" alt="" srcset="" />
             <div className="card-content">
               <h3>Beach Photo</h3>
-              <p>A beautiful view of the beach.</p>
+              <p>Would you like to know more About this ? .You Can get more information about this by clicking here .Get in touch</p>
+              <i class="ri-external-link-fill"></i>
             </div>
           </div>
           <div className='card-all'>
             <img src="../src/assets/beach3.jpg"  alt="" srcset="" />
             <div className="card-content">
               <h3>Beach Photo</h3>
-              <p>A beautiful view of the beach.</p>
+              <p>Would you like to know more About this ? .You Can get more information about this by clicking here .Get in touch</p>
+              <i class="ri-external-link-fill"></i>
             </div>
           </div>
           <div className='card-all'>
             <img src="../src/assets/beach3.jpg"  alt="" srcset="" />
             <div className="card-content">
               <h3>Beach Photo</h3>
-              <p>A beautiful view of the beach.</p>
+              <p>Would you like to know more About this ? .You Can get more information about this by clicking here .Get in touch</p>
+              <i class="ri-external-link-fill"></i>
             </div>
           </div>
          
@@ -33,21 +36,24 @@ export const Photographer = () => {
             <img src="../src/assets/beach3.jpg"  alt="" srcset="" />
             <div className="card-content">
               <h3>Beach Photo</h3>
-              <p>A beautiful view of the beach.</p>
+              <p>Would you like to know more About this ? .You Can get more information about this by clicking here .Get in touch</p>
+              <i class="ri-external-link-fill"></i>
             </div>
           </div>
           <div className='card-all'>
             <img src="../src/assets/beach3.jpg"  alt="" srcset="" />
             <div className="card-content">
               <h3>Beach Photo</h3>
-              <p>A beautiful view of the beach.</p>
+              <p>Would you like to know more About this ? .You Can get more information about this by clicking here .Get in touch</p>
+              <i class="ri-external-link-fill"></i>
             </div>
           </div>
           <div className='card-all'>
             <img src="../src/assets/beach3.jpg"  alt="" srcset="" />
             <div className="card-content">
               <h3>Beach Photo</h3>
-              <p>A beautiful view of the beach.</p>
+              <p>Would you like to know more About this ? .You Can get more information about this by clicking here .Get in touch</p>
+              <i class="ri-external-link-fill"></i>
             </div>
           </div>
         
