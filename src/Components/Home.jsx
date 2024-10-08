@@ -72,7 +72,7 @@ const Home = () => {
         <div className='image'>
           <div className='img-container'>
             <div className="blob"></div>
-            <img src="/src/assets/removebg.png" alt="" />
+            <img src="removebagriund1.png" alt="" />
           </div>
         </div>
       </div>

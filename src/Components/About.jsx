@@ -15,7 +15,7 @@ export default class About extends Component {
               {/* 
               <div className="blobe"></div> */}
               <div className='image-frame'>
-                <img src="/src/assets/removebackground2.png" alt="" />
+                <img src="removebackground2.png" alt="" />
               </div>
 
 

@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import pic1 from '../assets/pic-1.jpg';
 import pic2 from '../assets/pic-2.jpeg';
 import pic3 from '../assets/pic-3.jpg';
 
 import './Css/Feedbacksection.css';
+
 const Feedbacksection = () => {
-  const [feedback, setFeedback] = useState('');
-  const [feedbackList, setFeedbackList] = useState([
+  const initialFeedback = [
     {
       name: "Marnus Stephen",
       comment: "We had a great time collaborating with the Filament team. They have my high recommendation!",
@@ -27,7 +27,19 @@ const Feedbacksection = () => {
       comment: "I absolutely loved working with the Filament team. Complete experts at what they do!",
       img: pic1
     }
-  ]);
+  ];
+
+  const [feedback, setFeedback] = useState('');
+  const [feedbackList, setFeedbackList] = useState(() => {
+    // Load feedback from local storage or fallback to initial feedback
+    const savedFeedback = localStorage.getItem('feedbackList');
+    return savedFeedback ? JSON.parse(savedFeedback) : initialFeedback;
+  });
+
+  useEffect(() => {
+    // Save feedback to local storage whenever feedbackList changes
+    localStorage.setItem('feedbackList', JSON.stringify(feedbackList));
+  }, [feedbackList]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -35,17 +47,17 @@ const Feedbacksection = () => {
       const newFeedback = {
         name: "Anonymous",
         comment: feedback,
-        img: "" // You can add a placeholder image here
+        img: pic3 // Set pic3 as the default image for new feedback
       };
       setFeedbackList([...feedbackList, newFeedback]);
-      setFeedback(''); // Clear input after submission
+      setFeedback(''); // Reset the textarea
     }
   };
 
   return (
     <div className="feedback-main">
       <h2 className='t-title'>Client Feedback</h2>
-   
+      
       {feedbackList.map((item, index) => (
         <div className="card" key={index}>
           <img src={item.img} alt="user" />

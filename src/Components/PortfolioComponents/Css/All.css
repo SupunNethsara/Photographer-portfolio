@@ -83,16 +83,20 @@
     .all .row .card-all {
         flex: 1 1 100%; /* Two cards per row */
         max-width: 100%; /* Set a max width for better control */
-        height: auto;
+        height: 300px;
         margin: 5px;
        
     }
     .all .row .card-all .card-content {
         
-        height: 20%;
+        height: 22%;
         cursor: pointer;
     }
     .all .row {
         margin-top: 15px;
+    }
+    .all .row .card-all .card-content h3 {
+        margin: 0;
+        font-size: 1.2rem;
     }
 }
