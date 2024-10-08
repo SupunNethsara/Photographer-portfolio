@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import { collection, addDoc, getDocs } from "firebase/firestore";
+import { db } from '../firebaseConfig';  // Import Firestore config
 import pic1 from '../assets/pic-1.jpg';
 import pic2 from '../assets/pic-2.jpeg';
 import pic3 from '../assets/pic-3.jpg';
-
 import './Css/Feedbacksection.css';
 
 const Feedbacksection = () => {
-  const initialFeedback = [
+  const [name, setName] = useState(''); // New state for the name
+  const [feedback, setFeedback] = useState('');
+  const [feedbackList, setFeedbackList] = useState([
     {
       name: "Marnus Stephen",
       comment: "We had a great time collaborating with the Filament team. They have my high recommendation!",
@@ -21,58 +24,70 @@ const Feedbacksection = () => {
       name: "Stacy Stone",
       comment: "I absolutely loved working with the Filament team. Complete experts at what they do!",
       img: pic3
-    },
-    {
-      name: "Jhon kills",
-      comment: "I absolutely loved working with the Filament team. Complete experts at what they do!",
-      img: pic1
     }
-  ];
-
-  const [feedback, setFeedback] = useState('');
-  const [feedbackList, setFeedbackList] = useState(() => {
-    // Load feedback from local storage or fallback to initial feedback
-    const savedFeedback = localStorage.getItem('feedbackList');
-    return savedFeedback ? JSON.parse(savedFeedback) : initialFeedback;
-  });
+  ]);
 
   useEffect(() => {
-    // Save feedback to local storage whenever feedbackList changes
-    localStorage.setItem('feedbackList', JSON.stringify(feedbackList));
-  }, [feedbackList]);
+    // Fetch feedbacks from Firestore when component mounts
+    const fetchFeedback = async () => {
+      const querySnapshot = await getDocs(collection(db, "feedback"));
+      const feedbackArray = [];
+      querySnapshot.forEach((doc) => {
+        feedbackArray.push(doc.data());
+      });
+      // Combine Firestore feedbacks with the default feedbacks
+      setFeedbackList(prevList => [...prevList, ...feedbackArray]);
+    };
+    fetchFeedback();
+  }, []);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (feedback.trim()) {
+    if (feedback.trim() && name.trim()) { // Check if both feedback and name are provided
       const newFeedback = {
-        name: "Anonymous",
+        name: name || "Anonymous", // Use the provided name or fallback to "Anonymous"
         comment: feedback,
-        img: pic3 // Set pic3 as the default image for new feedback
+        img: pic3
       };
-      setFeedbackList([...feedbackList, newFeedback]);
-      setFeedback(''); // Reset the textarea
+
+      try {
+        await addDoc(collection(db, "feedback"), newFeedback);
+        setFeedbackList([...feedbackList, newFeedback]);
+        setFeedback('');
+        setName(''); // Clear the name input after submission
+      } catch (error) {
+        console.error("Error adding feedback: ", error);
+      }
     }
   };
 
   return (
     <div className="feedback-main">
-      <h2 className='t-title'>Client Feedback</h2>
-      
-      {feedbackList.map((item, index) => (
-        <div className="card" key={index}>
-          <img src={item.img} alt="user" />
-          <div className="card__content">
-            <span><i className="ri-double-quotes-l"></i></span>
-            <div className="card__details">
-              <p>{item.comment}</p>
-              <h4>- {item.name}</h4>
+      <div className='feedbacks-section'>
+        <h2 className='t-title'>Client Feedback</h2>
+        {feedbackList.map((item, index) => (
+          <div className="card" key={index}>
+            <img src={item.img || pic3} alt="user" />
+            <div className="card__content">
+              <span><i className="ri-double-quotes-l"></i></span>
+              <div className="card__details">
+                <p>{item.comment}</p>
+                <h4>- {item.name}</h4>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
 
       <div className="feedback-input">
         <form onSubmit={handleSubmit}>
+          <input 
+            type="text"
+            placeholder="Your Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="feedback-name-input" // Optional: Add a class for styling
+          />
           <textarea
             placeholder="Write your feedback here..."
             value={feedback}
