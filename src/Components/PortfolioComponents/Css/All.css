@@ -83,7 +83,7 @@
     .all .row .card-all {
         flex: 1 1 100%; /* Two cards per row */
         max-width: 100%; /* Set a max width for better control */
-        height: 300px;
+        height: 200px;
         margin: 5px;
        
     }

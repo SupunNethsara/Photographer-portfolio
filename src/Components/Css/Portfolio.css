@@ -37,7 +37,7 @@
 @media (min-width: 200px) and (max-width:900px){
     .nav ul li{
         color: #ffffff;
-        margin: 8px;
+        margin: 5px 13px 2px 13px;
         font-size: 12px;
     }
 }

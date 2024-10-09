@@ -37,7 +37,7 @@ export default class About extends Component {
           <div className='about-content'>
             <span >Let me introduce myself</span>
             <h3>A story of good</h3>
-            <h4>I'am Dynamic Crative Designer<span className='pandv' style={{ color: '#1E90FF', fontWeight: '400' }}> photography and Vedio</span></h4>
+            <h4>I'am Dynamic Crative Designer<span className='pandv' style={{ color: '#1E90FF' }}> photography and Vedio</span></h4>
             <p>With over 2+ Years of experience as a freelance video editor, I bring stories to life through compelling visuals and seamless storytelling. My passion for filmmaking and content creation drives me to craft engaging videos that captivate audiences. Whether it’s editing dynamic vlogs, promotional content, or cinematic short films, wedding films, I thrive on collaborating with clients to transform their visions into reality. Let’s create something amazing together! lo</p>
             <div className="btn-box">
               <button>Hire Me</button>

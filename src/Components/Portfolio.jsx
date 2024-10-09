@@ -36,7 +36,7 @@ const Portfolio = () => {
               }}
               onClick={() => handleItemClick('Video Editing')}
             >
-              Video Editing
+              Video 
             </NavLink>
           </li>
           <li>
@@ -47,7 +47,7 @@ const Portfolio = () => {
               }}
               onClick={() => handleItemClick('Photo Shooting')}
             >
-              Photo Shooting
+              Photo
             </NavLink>
           </li>
           <li>

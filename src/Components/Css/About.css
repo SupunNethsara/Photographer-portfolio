@@ -151,7 +151,7 @@ font-weight: 600;
 .info-about1,
 .info-about2,
 .info-about3 {
-    background: #250821;
+    background: #0f131a;
     font-size: .7rem;
     position: absolute;
     /* Keep info bubbles within the relative container */
@@ -488,7 +488,40 @@ font-weight: 600;
         flex-wrap: wrap;
 
     }
+    .about-content{
+        justify-content: center;
 
+        align-items: center;
+        text-align:center;
+    }
+    .about-content span {
+        color: #fdfdfd;
+        font-size: 16px;
+        font-weight: 200;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+ 
+    
+    .about-content h3 {
+        font-weight: 600;
+        font-size: 35px;
+        margin-bottom: .2rem;
+        color: #ffffff;
+    }
+    .about-content h4{
+        font-size: 19px;
+        color: #d4cfcf;
+        
+    }
+    .about-content .pandv{
+    font-size: 13px;   
+    font-weight: 600;
+    line-height: 1;
+      
+    }
+    
     .details {
         width: 100%;
         flex-wrap: wrap;

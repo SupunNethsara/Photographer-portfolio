@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { collection, addDoc, getDocs } from "firebase/firestore";
 import { db } from '../firebaseConfig';  // Import Firestore config
+import Avatar from '@mui/material/Avatar';
+import Stack from '@mui/material/Stack';
+import { blue, deepPurple } from '@mui/material/colors';
 import pic1 from '../assets/pic-1.jpg';
 import pic2 from '../assets/pic-2.jpeg';
 import pic3 from '../assets/pic-3.jpg';
 import './Css/Feedbacksection.css';
 
 const Feedbacksection = () => {
-  const [name, setName] = useState(''); // New state for the name
   const [feedback, setFeedback] = useState('');
+  const [name, setName] = useState('');
   const [feedbackList, setFeedbackList] = useState([
     {
       name: "Marnus Stephen",
@@ -24,6 +27,11 @@ const Feedbacksection = () => {
       name: "Stacy Stone",
       comment: "I absolutely loved working with the Filament team. Complete experts at what they do!",
       img: pic3
+    },
+    {
+      name: "Jhon kills",
+      comment: "I absolutely loved working with the Filament team. Complete experts at what they do!",
+      img: pic1
     }
   ]);
 
@@ -35,58 +43,70 @@ const Feedbacksection = () => {
       querySnapshot.forEach((doc) => {
         feedbackArray.push(doc.data());
       });
-      // Combine Firestore feedbacks with the default feedbacks
-      setFeedbackList(prevList => [...prevList, ...feedbackArray]);
+      setFeedbackList([...feedbackList, ...feedbackArray]);
     };
     fetchFeedback();
   }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (feedback.trim() && name.trim()) { // Check if both feedback and name are provided
+    if (feedback.trim() && name.trim()) {
       const newFeedback = {
-        name: name || "Anonymous", // Use the provided name or fallback to "Anonymous"
+        name: name || "Anonymous",
         comment: feedback,
-        img: pic3
+        img: null, // No image for new feedback, we'll use avatar instead
       };
 
       try {
         await addDoc(collection(db, "feedback"), newFeedback);
         setFeedbackList([...feedbackList, newFeedback]);
         setFeedback('');
-        setName(''); // Clear the name input after submission
+        setName('');
       } catch (error) {
         console.error("Error adding feedback: ", error);
       }
     }
   };
 
+  // Function to extract the first letter of the name
+  const getFirstLetter = (name) => {
+    return name ? name.charAt(0).toUpperCase() : 'A';
+  };
+
   return (
     <div className="feedback-main">
-      <div className='feedbacks-section'>
-        <h2 className='t-title'>Client Feedback</h2>
-        {feedbackList.map((item, index) => (
-          <div className="card" key={index}>
-            <img src={item.img || pic3} alt="user" />
-            <div className="card__content">
-              <span><i className="ri-double-quotes-l"></i></span>
-              <div className="card__details">
-                <p>{item.comment}</p>
-                <h4>- {item.name}</h4>
-              </div>
-            </div>
+      <h2 className='t-title'>Client Feedback</h2>
+     
+      <div className="feedback-cards-container"> {/* New scrollable div */}
+    {feedbackList.map((item, index) => (
+      <div className="card" key={index}>
+        <Stack direction="row" spacing={2}>
+          {item.img ? (
+            <Avatar src={item.img} alt="user" />
+          ) : (
+            <Avatar sx={{ bgcolor:blue[500] }}>
+              {getFirstLetter(item.name)}
+            </Avatar>
+          )}
+        </Stack>
+        <div className="card__content">
+          <span><i className="ri-double-quotes-l"></i></span>
+          <div className="card__details">
+            <p>{item.comment}</p>
+            <h4>- {item.name}</h4>
           </div>
-        ))}
+        </div>
       </div>
-
+    ))}
+  </div>
       <div className="feedback-input">
         <form onSubmit={handleSubmit}>
-          <input 
+          <input
             type="text"
-            placeholder="Your Name"
+            placeholder="Enter your name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="feedback-name-input" // Optional: Add a class for styling
+            className="name-input"
           />
           <textarea
             placeholder="Write your feedback here..."
