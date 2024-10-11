@@ -1,7 +1,29 @@
-import React, { Component } from 'react'
+import React, { useEffect } from 'react'
 import './Css/About.css';
-export default class About extends Component {
-  render() {
+import ScrollReveal from 'scrollreveal';
+
+  const About = () => {
+    useEffect(() => {
+      ScrollReveal().reveal('.about', {
+        origin: 'bottom',
+        distance: '50px',
+        duration: 1000,
+        reset: true,
+        easing: 'ease-in-out'
+      });
+  
+      ScrollReveal().reveal('.details', {
+        origin: 'bottom',
+        distance: '50px',
+        duration: 1000,
+        reset: true,
+        easing: 'ease-in-out'
+      });
+  }, []);
+
+    
+
+
     return (
       <div>
         <div className='header-sec' >
@@ -21,15 +43,15 @@ export default class About extends Component {
 
             </div>
             <div className="info-about1">
-              <span style={{ color: '#1E90FF', fontSize: '1rem' }} >2+</span>
+              <span style={{ color: '#1E90FF', fontSize: '1.2rem' }} >2+</span>
               <p style={{ color: 'white' }}>Years of Experience</p>
             </div>
             <div className="info-about2">
-              <span style={{ color: '#1E90FF', fontSize: '1rem' }} >16+</span>
+              <span style={{ color: '#1E90FF', fontSize: '1.2rem' }} >16+</span>
               <p style={{ color: 'white' }}>Project Complete</p>
             </div>
             <div className="info-about3">
-              <span style={{ color: '#1E90FF', fontSize: '1rem' }} >60+</span>
+              <span style={{ color: '#1E90FF', fontSize: '1.2rem' }} >60+</span>
               <p style={{ color: 'white' }}>happy Clients</p>
             </div>
           </div>
@@ -194,4 +216,5 @@ export default class About extends Component {
       </div>
     )
   }
-}
+  export default About;
+

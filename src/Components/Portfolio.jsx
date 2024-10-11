@@ -1,16 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import './Css/Portfolio.css';
-
+import ScrollReveal from 'scrollreveal';
 const Portfolio = () => {
-  const [activeItem, setActiveItem] = useState('All');
 
-  const handleItemClick = (item) => {
+  
+  
+const [activeItem, setActiveItem] = useState('All');
+ const handleItemClick = (item) => {
     setActiveItem(item);
   };
 
+  useEffect(() => {
+    ScrollReveal().reveal('.port', {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      reset: true,  // Animation will happen every time it scrolls into view
+      easing: 'ease-in-out'
+    });
+  }, []);
+
   return (
-    <div>
+    <div className='port'>
       <div className='header-sec'>
         <h2>Education and Experience</h2>
         <h1>Latest Project</h1>

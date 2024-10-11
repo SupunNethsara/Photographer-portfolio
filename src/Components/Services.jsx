@@ -1,8 +1,20 @@
-import React from 'react'
+import React ,{  useEffect } from 'react'
 import './Css/Services.css';
 import 'remixicon/fonts/remixicon.css';
+import ScrollReveal from 'scrollreveal';
 import Feedbacksection from './Feedbacksection';
 export const Services = () => {
+
+  useEffect(() => {
+    ScrollReveal().reveal('.services-feedback', {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      reset: true,  // Animation will happen every time it scrolls into view
+      easing: 'ease-in-out'
+    });
+  }, []);
+
   return (
     <div>
       <div className="services-feedback">

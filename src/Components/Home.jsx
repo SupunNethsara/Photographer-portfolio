@@ -1,4 +1,5 @@
-import React, { useState } from 'react'; // Import useState for managing state
+import React, { useState, useEffect } from 'react'; // Import useState for managing state
+
 import './Css/Home.css';
 import { Typewriter } from 'react-simple-typewriter';
 import softwareitem1 from '../assets/pngwing1.png';
@@ -12,8 +13,29 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Link, useNavigate } from 'react-router-dom';
-
+import ScrollReveal from 'scrollreveal';
 const Home = () => {
+
+  //scrolreveal///////////
+  useEffect(() => {
+    ScrollReveal().reveal('.social-icons', {
+      origin: 'top',
+      distance: '50px',
+      duration: 1000,
+      reset: true,  // Animation will happen every time it scrolls into view
+      easing: 'ease-in-out'
+    });
+  }, []);
+  useEffect(() => {
+    ScrollReveal().reveal('.text', {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      reset: true,  // Animation will happen every time it scrolls into view
+      easing: 'ease-in-out'
+    });
+  }, []);
+
   const [isDownloaded, setIsDownloaded] = useState(false);
   const handleDownload = () => {
     // Set the download flag to true after clicking

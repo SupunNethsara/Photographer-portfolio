@@ -1,6 +1,16 @@
-import React from 'react'
+import React,{  useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 import '../PortfolioComponents/Css/All.css';
 export const Vedioediter = () => {
+  useEffect(() => {
+    ScrollReveal().reveal('.all', {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      reset: true,  // Animation will happen every time it scrolls into view
+      easing: 'ease-in-out'
+    });
+  }, []);
   return (
     <div>
       <div className="all">

@@ -4,6 +4,7 @@
     display: grid;
     justify-content: center;
     align-items: center;
+  
 }
 
 .all .row {
@@ -14,6 +15,14 @@
     gap: 40px; /* Space between cards */
 }
 
+
+
+.all .row .card-all img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
 .all .row .card-all {
     flex: 1 1 45%; /* Two cards per row */
     max-width: 300px; /* Set a max width for better control */
@@ -27,13 +36,6 @@
 }
 
 
-.all .row .card-all img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
-}
-
 .all .row .card-all .card-content {
     position: absolute;
     bottom: 0;
@@ -45,7 +47,6 @@
     opacity: 1;
     transition: height 0.8s ease, opacity 0.8s ease;
     color: white;
-
     cursor: pointer;
 }
 
@@ -89,7 +90,7 @@
     }
     .all .row .card-all .card-content {
         
-        height: 22%;
+        height: 33%;
         cursor: pointer;
     }
     .all .row {

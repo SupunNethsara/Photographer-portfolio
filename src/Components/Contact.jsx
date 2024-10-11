@@ -1,8 +1,22 @@
-import React, { Component } from 'react'
+import React, { useEffect} from 'react'
+
+import ScrollReveal from 'scrollreveal';
 import './Css/Contact.css';
 import Swal from 'sweetalert2'
-export default class Contact extends Component {
-  render() {
+
+
+  
+  const Contact = () => {
+    useEffect(() => {
+      ScrollReveal().reveal('.contact', {
+        origin: 'bottom',
+        distance: '50px',
+        duration: 1000,
+        reset: true, 
+        easing: 'ease-in-out'
+      });
+    }, []);
+
 
     const onSubmit = async (event) => {
       event.preventDefault();
@@ -50,7 +64,10 @@ export default class Contact extends Component {
             <button type='submit'>Send Message</button>
           </form>
         </section>
+     
+ 
       </div>
     )
   }
-}
+
+  export default Contact;

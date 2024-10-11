@@ -54,12 +54,10 @@
     width: 50%;
     text-align: center;
     position: relative;
-    /* Ensure the image frame and info boxes stay relative to this */
     width: 400px;
-    /* Adjust this to control the image frame size */
-    height: 400px;
+     height: 400px;
     margin: 0 auto;
-    /* Center the image frame */
+   
 }
 
 .about .image-frame {
@@ -72,14 +70,15 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    
 }
 
 .about .img-about img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Ensure the image fits inside the circular frame */
     z-index: 12;
+   
 }
 
 /* .blobe {
@@ -153,16 +152,17 @@ font-weight: 600;
 .info-about3 {
     background: #0f131a;
     font-size: .7rem;
+    font-weight: 500;
     position: absolute;
     /* Keep info bubbles within the relative container */
     padding: 10px;
-    width: 100px;
+    width: 110px;
     /* Reduced size to fit better */
-    height: 100px;
+    height: 110px;
     border-radius: 50%;
     box-shadow: 0 0 10px #1E90FF, 0 0 20px #1E90FF;
     color: #1E90FF;
-    border: 1px solid #1E90FF;
+    border: 2px solid #1E90FF;
     z-index: 100;
     animation: morph 6s linear infinite;
 }
@@ -580,10 +580,10 @@ font-weight: 600;
     .info-about1,
     .info-about2,
     .info-about3 {
-        background: #250821;
+        background: #0f131a;
         font-size: .5rem;
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
 
     }
 }
