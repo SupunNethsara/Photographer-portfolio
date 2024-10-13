@@ -12,13 +12,13 @@ import ScrollReveal from 'scrollreveal';
         easing: 'ease-in-out'
       });
   
-      ScrollReveal().reveal('.details', {
-        origin: 'bottom',
-        distance: '50px',
-        duration: 1000,
-        reset: true,
-        easing: 'ease-in-out'
-      });
+      // ScrollReveal().reveal('.details', {
+      //   origin: 'bottom',
+      //   distance: '50px',
+      //   duration: 1000,
+      //   reset: true,
+      //   easing: 'ease-in-out'
+      // });
   }, []);
 
     

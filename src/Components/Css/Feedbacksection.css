@@ -111,7 +111,77 @@
 .submit-btn:hover {
   background-color: #1e73be;
 }
+@media (min-width: 1024px) and (max-width: 1640px) {
+  .feedback-main{
+    margin-top: 10px;
+  
+  }
+  .feedback-cards-container {
+    max-height:420px ; 
+   padding-right: 8px; 
+  }
+  
+  .t-title {
 
+    margin: 20px;
+    font-size: 18px;
+  }
+  
+  .card {
+   margin: 12px 10px 10px 10px;
+    padding: 15px;
+    gap: 1.5rem;
+  }
+
+  .card__content {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .card__content span i {
+    font-size: 0.8rem;
+    
+  }
+  
+  .card__details p {
+   margin-bottom: 1rem;
+    font-size: 11px;
+  }
+  
+  .card__details h4 {
+   
+    font-size: 0.9rem;
+ }
+  
+  /* Feedback form styles */
+  .feedback-input {
+  padding: 8px;
+  }
+  
+  .feedback-textarea {
+  
+    height: 100%;
+    padding: 16px;
+  margin-top: 10px;
+  font-size: 14px;
+  }.name-input{
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 12px;
+    
+  }
+  
+
+  
+  .submit-btn {
+    font-size: 14px;
+  
+  }
+  
+  .submit-btn:hover {
+    background-color: #1e73be;
+  }
+}
 @media (min-width: 200px) and (max-width: 800px){
   .card {
     flex-wrap: wrap;

@@ -304,12 +304,75 @@ background:linear-gradient(to right ,rgb(8, 8, 8),#1f1e1e, black,rgb(39, 38, 38)
 
 
 
+/*lapop*/
+@media (min-width: 1024px) and (max-width: 1640px) {
+  .main-sec {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .social-icons {
+    right: 10px;
+    gap: 20px;
+    
+    }
+
+  .social-icons div {
+ padding: 3px;
+ font-size: 8px;
+}
+
+  .text p {
+    color: #e0e0e0;
+    padding: 5px 0 1px 0;
+    font-weight: 300;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
+      0 0 10px rgba(255, 255, 255, 0.3);
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .text-section {
+    margin: 60px 60px 10px 60px;
 
 
+  }
+
+  .cv button {
+    width: 200px;
+    height: auto;
+    font-size: 12px;
+
+  }
+
+  .typewrite {
+    display: inline-block;
+    min-Height: 20px;
+    margin-Top: 8px;
+
+    font-size: 25px;
+  }
+
+  .text h1 {
+    font-size: 16px;
+  }
+
+  .text h3 {
+    font-size: 18px;
+  }
+  .blob {
+
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 350px;
+ }
+}
 
 
-
-@media (min-width: 800px) and (max-width: 1123px) {
+/*tab*/
+@media (min-width: 790px) and (max-width: 1024px) {
   .main-sec {
     width: 100%;
     height: 100%;
@@ -323,49 +386,97 @@ background:linear-gradient(to right ,rgb(8, 8, 8),#1f1e1e, black,rgb(39, 38, 38)
     width: 100%;
     height: 100%;
     align-items: center;
-    text-align: left;
+    justify-content: center;
+    text-align: center;
     padding: 10px;
+    order: 2;
+  }
+
+
+  .img-container {
+    display: none;
+    order: 1;
   }
 
   .main-sec .image {
-    display: none;
-    width: 0%;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+
   }
 
+  .img-box {
+    position: relative;
+    display: flex;
+    order: 2;
+    position: relative;
+    width: 300px;
+    height: auto;
+    margin: 40px 10px 10px 200px;
+
+  }
   .text-section {
-    margin: 120px 60px 10px 60px;
-    height: 100%;/*100%*/
-   
+    margin: 70px 10px 10px 10px;
+    height: 100%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .text p {
-    color: #e0e0e0;
-    padding: 10px 0 1px 0;
-    font-weight: 300;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
-      0 0 10px rgba(255, 255, 255, 0.3);
-    font-size: 15px;
-    text-align: left;
+ font-weight: 300;
+   font-size: 16px;
+  text-align: center;
+  }
+  .software {
+ justify-content: center;
+ align-items: center;
+  }
+  
+  .software .software_item {
+    height: 42px;
+    width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(7, 44, 255, 0.1);
+  }
+.cv{
+  justify-content: center;
+  align-items: center;
+}
+  .cv button {
+    width: 260px;
+    height: auto;
+    margin: 90px 40px 10px 10px;
+  }
+  .social-icons {
+    gap: 20px;
+    display: grid;
   }
 
-
-  .cv button {
-    width: 250px;
-    height: auto;
-
+  .social-icons div {
+  font-size: 30px;
+    padding: 1px;
+   margin: 1px;
+    border: none;
   }
 
 }
 
-@media (min-width: 700px) and (max-width: 800px){
+@media (min-width: 700px) and (max-width: 800px) {
   .main-sec {
     display: grid;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-    background:linear-gradient(135deg,#020c1d,#1d1c1c );
+    /* background: linear-gradient(135deg, #020c1d, #1d1c1c); */
   }
+
   .img-container {
     display: none;
   }
@@ -374,9 +485,10 @@ background:linear-gradient(to right ,rgb(8, 8, 8),#1f1e1e, black,rgb(39, 38, 38)
     width: 100%;
     height: 100%;
     padding: 0;
-   
+
 
   }
+
   .img-box {
     position: relative;
     display: flex;
@@ -388,38 +500,43 @@ background:linear-gradient(to right ,rgb(8, 8, 8),#1f1e1e, black,rgb(39, 38, 38)
 
     order: 1;
   }
+
   .img-box .img-item {
     width: 100%;
     height: 100%;
-    background: 
-    #050d1c;
+    background:
+      #050d1c;
     border-radius: 50%;
 
   }
+
   .main-sec .text {
     width: 100%;
     height: 100%;
     padding: 5px;
     order: 1;
-    
 
-  }.text-section {
-   margin: 10px;
-   padding: 50px;
 
   }
 
-  .social-icons{
+  .text-section {
+    margin: 10px;
+    padding: 50px;
+
+  }
+
+  .social-icons {
     gap: 10px;
     display: grid;
   }
+
   .social-icons div {
-    
+
     padding: 1px;
-   
+
     margin: 1px;
     border: none;
-}
+  }
 
 }
 
@@ -434,7 +551,7 @@ background:linear-gradient(to right ,rgb(8, 8, 8),#1f1e1e, black,rgb(39, 38, 38)
     height: 100%;
     display: flex;
     flex-direction: column;
-    background:linear-gradient(135deg,#020c1d,#1d1c1c );
+    background: linear-gradient(135deg, #020c1d, #1d1c1c);
     /* background: linear-gradient(rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)), url('/src/assets/blackandwight.jpeg') center/cover no-repeat fixed; */
     overflow-y: auto;
@@ -448,6 +565,7 @@ background:linear-gradient(to right ,rgb(8, 8, 8),#1f1e1e, black,rgb(39, 38, 38)
     order: 2;
 
   }
+
   .main-sec .image {
     width: 100%;
     height: auto;
@@ -455,7 +573,8 @@ background:linear-gradient(to right ,rgb(8, 8, 8),#1f1e1e, black,rgb(39, 38, 38)
     margin: 0;
 
   }
-/* frame rgb image*/
+
+  /* frame rgb image*/
   .img-box {
     display: flex;
     order: 1;
@@ -482,29 +601,31 @@ background:linear-gradient(to right ,rgb(8, 8, 8),#1f1e1e, black,rgb(39, 38, 38)
     transform: translate(20%, 0%);
     mix-blend-mode: lighten;
   }
+
   .img-container {
     display: none;
   }
 
- 
-.social-icons {
-  position: absolute;
-  top: 3px;
-  right: 5px;
-  display: grid;
-  gap: 10px;
-  z-index: 2;
-  margin-top:5px;
-  padding: 5px;
-}
 
-.social-icons div {
-  font-size: 8px;
-  padding: 1px;
-  border: none;
-  margin-top: 10px;
+  .social-icons {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    display: grid;
+    gap: 10px;
+    z-index: 2;
+    margin-top: 5px;
+    padding: 5px;
+  }
 
-}
+  .social-icons div {
+    font-size: 8px;
+    padding: 1px;
+    border: none;
+    margin-top: 10px;
+
+  }
+
   .text-section {
     margin: 10px 20px 10px 20px;
   }
@@ -512,7 +633,7 @@ background:linear-gradient(to right ,rgb(8, 8, 8),#1f1e1e, black,rgb(39, 38, 38)
   .cv {
     flex-wrap: wrap;
     margin-top: 30px;
-    
+
   }
 
   .cv button {

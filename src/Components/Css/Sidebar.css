@@ -1,0 +1,29 @@
+
+@media (min-width: 790px) and (max-width: 1024px) {
+  .sidebar-icon{
+    font-size: 20px;
+  }
+  .icons-sec{
+    margin-top: 270px;
+    gap: 2.5rem;
+}
+}
+
+
+
+
+@media (min-width: 1024px) and (max-width: 1640px) {
+    .sidebar-icon{
+      font-size: 14px; 
+
+  }
+    .cursor-pointer{
+        
+    }
+    .icons-sec{
+        margin-top: 100px;
+        gap: 1rem;
+    }
+  
+  }
+  

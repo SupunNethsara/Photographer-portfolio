@@ -424,6 +424,181 @@ font-weight: 600;
     color: #666;
     font-size: 17px;
 }
+/*laptop*/
+@media (min-width: 1024px) and (max-width: 1640px){
+    .about .about-content {
+   
+        width: 50%;
+        height: auto;
+        padding: 20px 10px 10px 30px;
+    }
+    .about .img-about {
+     
+        width: 50%;
+       
+        width: 300px;
+         height: 300px;
+        margin: 0 auto;
+       
+    }
+   
+    .skills-bar .bar {
+       padding: 10px;
+        margin: 0;
+    }
+    .about-content span {
+        color: #fdfdfd;
+        font-size: 12px;
+        font-weight: 200;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+    .about-content h2 {
+        color: #1E90FF;
+        font-weight: 700;
+        font-size: 12px;
+    }
+    
+    .about-content h3 {
+        font-weight: 600;
+        font-size: 30px;
+        margin-bottom: .2rem;
+        color: #ffffff;
+    }
+    .about-content h4{
+        font-size: 15px;
+        color: #d4cfcf;
+    }
+    .about-content .pandv{
+    font-size: 18px;   
+    font-weight: 600;     
+    }
+    
+    .about-content p {
+      margin-top: 20px;
+        font-size: 14px;
+ }
+ .about-content button {
+    margin-top: 17px;
+    width: 160px;
+    height: 100%;
+    padding: 10px;
+   font-size: 12px;
+font-weight: 400;
+ margin: 10px 10px 30px 0px;
+}
+.info-about1,
+.info-about2,
+.info-about3 {
+
+    font-size: .6rem;
+    font-weight: 700;
+    position: absolute;
+    /* Keep info bubbles within the relative container */
+    padding: 10px;
+    width: 90px;
+    /* Reduced size to fit better */
+    height: 90px;
+    border-radius: 50%;
+   
+}
+
+
+.skills-bar .bar .title {
+ font-size: 17px;
+    font-weight: 600;
+
+}
+
+.skills-bar .candidatos {
+ 
+    margin-bottom: 10px;
+    margin: 35px 0px 0px 30px;
+
+}
+
+.skills-bar .candidatos .parcial {
+  width: 80%;
+    
+}
+
+
+.skills-bar .candidatos .parcial .info .nome {
+
+    font-size: 12px;
+    font-weight: 600;
+  
+}
+
+.skills-bar .candidatos .parcial .info .percentag-num {
+ font-size: 12px;
+
+}
+.about-me {
+  padding: 0px 10px 10px 10px;
+}
+
+.about-me .information {
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.about-me .information p {
+   
+    line-height: 6;
+    color: #ffffff;
+    font-size: 12px;
+    border-bottom: 2px solid rgb(117, 115, 115 , 0.2);
+}
+
+
+
+.edu-exp>div {
+  padding: 00px 40px 20px 40px;
+}
+
+.edu-exp .col {
+  padding: 10px;
+
+}
+
+.title h2 {
+    color: #ffffff;
+    margin: 20px;
+    font-size: 20px;
+}
+
+
+
+
+
+.col .contents .box {
+padding: 18px;
+ }
+
+
+
+
+.box h4 {
+   font-weight: 500;
+    font-size: 13px;
+}
+
+.box h3 {
+    font-size: 17px;
+    
+}
+
+.box p {
+   
+    font-size: 14px;
+}
+
+
+ 
+    
+}
 
 @media (min-width: 800px) and (max-width:1200px) {
     .about {

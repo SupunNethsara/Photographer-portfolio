@@ -70,9 +70,41 @@
     box-shadow: 0 0 15px rgba(0, 86, 214, 0.8);
   }
 
+  @media (min-width: 1024px) and (max-width: 1640px){
+   
+    
+    .contact form {
+      max-width: 550px;
+   padding: 20px 20px 30px;
+ }
+    
+    .contact form h2 {
+      font-size: 23px;
+    }
+    
+    .contact form .input-box {
+      margin-top: 10px;
+    }
+    
+    .contact form .input-box .field {
+  font-size: 14px;
+    }
+    
+ 
+    .contact form .input-box .field.mess {
+      height: 130px;
+      resize: none;
+    }
+    
+    .contact form button {
+    height: 50px;
+  font-size: 16px;
+     }
+    
+   
   
-  
-  
+  }
+ 
   @media (min-width: 200px) and (max-width:900px){
     .contact {
       width: 100%;

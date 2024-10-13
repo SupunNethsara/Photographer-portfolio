@@ -36,10 +36,37 @@
    
     
 }
+@media (min-width: 1024px) and (max-width: 1640px) {
+    
+.nav{
+     padding: 2px;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+ .nav ul{
+ margin-top: 5px;
+ }
+ .nav ul li{
+     color: #ffffff;
+     margin: 15px ;
+     cursor: pointer;
+     text-decoration: none;
+     font-weight: 400;
+     font-size: 15px;
+ }
+
+ .menu-section{
+ padding: 5px;
+}
+}
+
+
+
 @media (min-width: 200px) and (max-width:900px){
     .nav ul li{
         color: #ffffff;
-        margin: 5px 13px 2px 13px;
-        font-size: 12px;
+        margin: 5px 20px 2px 13px;
+        font-size: 15px;
     }
 }

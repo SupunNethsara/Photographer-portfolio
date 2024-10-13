@@ -4,17 +4,15 @@ import { MdOutlineDashboard } from "react-icons/md";
 import { RiSettings4Line } from "react-icons/ri";
 import { TbReportAnalytics } from "react-icons/tb";
 import { AiOutlineUser } from "react-icons/ai";
-import { FaTools } from "react-icons/fa"; 
-
-import { FaProjectDiagram } from "react-icons/fa";
+import { FaTools, FaProjectDiagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import './Css/Sidebar.css'
 const Sidebar = () => {
   const menus = [
     { name: "Home", link: "/", icon: MdOutlineDashboard },
     { name: "About", link: "/about", icon: AiOutlineUser },
-    { name: "Services", link: "/services", icon: FaTools }, 
-    { name: "Portfolio", link: "/portfolio", icon:FaProjectDiagram },
+    { name: "Services", link: "/services", icon: FaTools },
+    { name: "Portfolio", link: "/portfolio", icon: FaProjectDiagram },
     { name: "Contact", link: "/Contact", icon: TbReportAnalytics, margin: true },
   ];
 
@@ -27,14 +25,14 @@ const Sidebar = () => {
         open ? "w-72" : "w-16"
       } duration-500 text-gray-100 px-4`}
     >
-      <div className="py-3 flex justify-end">
-        <HiMenuAlt3
+      <div className="py-3 flex justify-end ">
+        <HiMenuAlt3 
           size={26}
           className="cursor-pointer"
           onClick={() => setOpen(!open)}
         />
       </div>
-      <div className="mt-40 flex flex-col gap-6 relative">
+      <div className="icons-sec mt-40 flex flex-col gap-6 relative">
         {menus.map((menu, i) => (
           <Link
             to={menu.link}
@@ -51,8 +49,8 @@ const Sidebar = () => {
           >
             <div>
               {React.createElement(menu.icon, {
-                size: "18",
-                color: activeMenu === menu.name ? "#ffffff" : "#888888", // Use #ffffff for active, #888888 for inactive
+                 // Default icon size
+                className: `sidebar-icon ${activeMenu === menu.name ? 'active-icon' : ''}`, // Add class for further adjustments
               })}
             </div>
             <h2
