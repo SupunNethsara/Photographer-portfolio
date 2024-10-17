@@ -1,4 +1,17 @@
-
+.header-sec{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+.header-sec h1{
+    color: #1E90FF;
+    font-size: 30px;
+    font-weight: 700;
+}
+.header-sec h2{
+    color: #ffffff;
+}
 .nav{
    display: flex;
     width: 100%;

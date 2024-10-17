@@ -48,7 +48,7 @@ const [activeItem, setActiveItem] = useState('All');
               }}
               onClick={() => handleItemClick('Video Editing')}
             >
-              Video 
+             Shorts
             </NavLink>
           </li>
           <li>
@@ -59,7 +59,7 @@ const [activeItem, setActiveItem] = useState('All');
               }}
               onClick={() => handleItemClick('Photo Shooting')}
             >
-              Photo
+             Weddings
             </NavLink>
           </li>
           <li>
@@ -70,7 +70,7 @@ const [activeItem, setActiveItem] = useState('All');
               }}
               onClick={() => handleItemClick('Contents')}
             >
-              Contents
+             Events
             </NavLink>
           </li>
         </ul>

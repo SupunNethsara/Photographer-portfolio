@@ -1,4 +1,8 @@
-
+.logos img {
+  display: block;
+  margin: 0 auto;
+  transition: all 0.5s ease;
+}
 @media (min-width: 790px) and (max-width: 1024px) {
   .sidebar-icon{
     font-size: 20px;
@@ -21,9 +25,18 @@
         
     }
     .icons-sec{
-        margin-top: 100px;
+        margin-top: 150px;
         gap: 1rem;
     }
   
+  }
+  @media (max-width:376px) {
+    .sidebar-icon{
+      font-size: 14px;
+    }
+    .icons-sec{
+      margin-top: 70px;
+      gap: 1rem;
+  }
   }
   

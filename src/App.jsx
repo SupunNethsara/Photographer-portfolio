@@ -13,6 +13,10 @@ import { Photographer } from './Components/PortfolioComponents/Photographer';
 import { Contentcreater } from './Components/PortfolioComponents/Contentcreater';
 import { Services } from './Components/Services';
 import { All } from './Components/PortfolioComponents/All';
+import { Skills } from './Components/About-component/Skills/Skills';
+import { Experience } from './Components/About-component/Experience/Experience';
+
+import { Education } from './Components/About-component/Education/Education';
 
 
 
@@ -30,11 +34,16 @@ function App() {
         <div className='drawer'>
           <Routes>
             <Route path='/' element={<Home />}></Route>
-            <Route path='/about' element={<About />}></Route>
-            <Route path='/services' element={<Services/>}></Route>
+            <Route path='/about' element={<About />}>
+              <Route index element={<Skills />} />
+              <Route path="education" element={<Education />} />
+              <Route path="experience" element={<Experience />} />
+             
+            </Route>
+            <Route path='/services' element={<Services />}></Route>
             <Route path='/portfolio' element={<Portfolio />}>
-              <Route index element={<All/>} />
-              <Route path="video-editing" element={<Vedioediter/>} />
+              <Route index element={<All />} />
+              <Route path="video-editing" element={<Vedioediter />} />
               <Route path="photo-shooting" element={<Photographer />} />
               <Route path="contents" element={<Contentcreater />} />
             </Route>

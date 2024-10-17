@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'; // Import useState for managing state
+import React, { useState, useEffect } from 'react';
 
 import './Css/Home.css';
 import { Typewriter } from 'react-simple-typewriter';
@@ -57,21 +57,26 @@ const Home = () => {
 
   return (
     <div>
+      <div className="logo">
+        <img src="logo-sashi.png" alt="" />
+      </div>
       <div className='social-icons'>
-        <div ><a href="https://www.youtube.com/" ><FacebookOutlinedIcon sx={{ color: '#1E90FF', fontSize: 20 }} /></a></div>
-        <div><WhatsAppIcon sx={{ color: ' #1E90FF', fontSize: 20 }} /></div>
-        <div><TwitterIcon sx={{ color: '#1E90FF', fontSize: 20 }} /></div>
-        <div><InstagramIcon sx={{ color: ' #1E90FF', fontSize: 20 }} /></div>
+        
+        <div><a href="" ><FacebookOutlinedIcon className='so' sx={{ color: '#1E90FF' }} /></a></div>
+        <div><a href="https://wa.me/+94714677205" ><WhatsAppIcon className='so' sx={{ color: ' #1E90FF' }} /></a></div>
+        <div><TwitterIcon className='so' sx={{ color: '#1E90FF' }} /></div>
+        <div><InstagramIcon className='so' sx={{ color: ' #1E90FF' }} /></div>
       </div>
       <div className='main-sec'>
+
         <div className='text'>
           <div className='text-section'>
             <h1>
-              <span>Hello I'm a</span>
+              <span>Hello I'm </span>
             </h1>
             <h3>Shashimal Liyanage</h3>
 
-            <span className='typewrite' style={{ display: 'inline-block', minHeight: '40px', marginTop: '15px', color: '#1E90FF' }}>
+            <span className='typewrite' style={{ display: 'inline-block', minHeight: '40px', color: '#1E90FF' }}>
               <Typewriter
                 words={['Content Creater', 'videographer', 'video editor']}
                 loop={true}
@@ -118,20 +123,28 @@ const Home = () => {
 
             </div>
           </div>
+
         </div>
 
         <div className='image'>
           <div className='img-container'>
-            <div className="blob"></div>
-            <img src="removebagriund1.png" alt="" />
+            <img src="removebagriund1.png" alt="" className="main-image" />
+            <img  src="blue-ring.png" alt="" className="ring-animation" />
           </div>
           <div className="img-box">
             <div className="img-item">
               <img src="shashimal.png" alt="" srcset="" />
             </div>
           </div>
+          <div className='top-right-image '>
+            <img src="/shadow.png" alt="" />
+          </div>
+        </div>
+        <div className='left-image '>
+          <img src="3" alt="" />
         </div>
       </div>
+
     </div>
   );
 };

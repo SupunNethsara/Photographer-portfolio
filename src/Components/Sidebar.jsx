@@ -7,6 +7,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import { FaTools, FaProjectDiagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import './Css/Sidebar.css'
+
 const Sidebar = () => {
   const menus = [
     { name: "Home", link: "/", icon: MdOutlineDashboard },
@@ -25,6 +26,7 @@ const Sidebar = () => {
         open ? "w-72" : "w-16"
       } duration-500 text-gray-100 px-4`}
     >
+      {/* Menu button */}
       <div className="py-3 flex justify-end ">
         <HiMenuAlt3 
           size={26}
@@ -32,7 +34,20 @@ const Sidebar = () => {
           onClick={() => setOpen(!open)}
         />
       </div>
-      <div className="icons-sec mt-40 flex flex-col gap-6 relative">
+
+      {/* Logo Section */}
+      <div className="logos flex justify-center items-center mt-6">
+        <img
+          src="logo-sashi.png" 
+          alt="Logo" 
+          className={`w-16 h-16  rounded-full transition-all duration-500 ${
+            open ? "w-28 h-28" : "w-10 h-10"
+          }`}
+        />
+      </div>
+
+      {/* Menu Items */}
+      <div className="icons-sec mt-20 flex flex-col gap-8 relative">
         {menus.map((menu, i) => (
           <Link
             to={menu.link}

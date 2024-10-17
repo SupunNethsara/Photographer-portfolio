@@ -6,10 +6,18 @@ import Feedbacksection from './Feedbacksection';
 export const Services = () => {
 
   useEffect(() => {
-    ScrollReveal().reveal('.services-feedback', {
+    ScrollReveal().reveal('.boxes-serv', {
       origin: 'bottom',
       distance: '50px',
       duration: 1000,
+      reset: true,  // Animation will happen every time it scrolls into view
+      easing: 'ease-in-out'
+    });
+
+    ScrollReveal().reveal('.heading p', {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 2000,
       reset: true,  // Animation will happen every time it scrolls into view
       easing: 'ease-in-out'
     });
@@ -18,6 +26,9 @@ export const Services = () => {
   return (
     <div>
       <div className="services-feedback">
+      <div className='top-left-image '>
+            <img src="/shadow4.png" alt="" />
+          </div>
         <div className="model">
           <div className='heading'>
             <h4>Services</h4>
@@ -29,13 +40,13 @@ export const Services = () => {
               <div className='boxs'>
                 <i className="ri-user-voice-line"></i>
                 <h2>Content Creator</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto neque veniam culpa exercitationem obcaecati ratione ullam voluptatem, est a, illo cupiditate deleniti. Minus esse magni minima omnis, iusto totam ut?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto neque veniam culpa exercitationem obcaecati ratione ullam voluptatem, </p>
                 <button>Read More</button>
               </div>
               <div className='boxs'>
               <i className="ri-film-line"></i>
               <h2>Vedio Editor</h2>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores quod quae corrupti. Dolorem veniam fugiat temporibus error et quos a quaerat consequatur amet cupiditate sunt quasi, ipsum pariatur inventore eligendi!</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto neque veniam culpa exercitationem obcaecati ratione ullam voluptatem,</p>
               <button>Read More</button>
               </div>
             </div>
@@ -43,13 +54,13 @@ export const Services = () => {
               <div className='boxs'>
                 <i className="ri-scissors-line"></i>
                 <h2>vedio Creator</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ex laudantium laboriosam saepe deleniti animi vitae repudiandae ducimus laborum iste, repellat, maxime est nobis, eligendi pariatur aliquid doloremque suscipit tenetur!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto neque veniam culpa exercitationem obcaecati ratione ullam voluptatem,</p>
                 <button>Read More</button>
               </div>
               <div className='boxs'>
                 <i className="ri-camera-line"></i>
                 <h2>Photographer</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus tenetur asperiores dolorum, necessitatibus sed dolore quaerat inventore fugiat porro ex, iure quam vitae quisquam. Magni, corporis. Minus dolor numquam natus.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto neque veniam culpa exercitationem obcaecati ratione ullam voluptatem,</p>
                 <button>Read More</button>
               </div>
             </div>
