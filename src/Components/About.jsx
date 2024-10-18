@@ -79,15 +79,13 @@ export const About = () => {
   return (
     <>
       <div className='about-container'>
-        <div className='top-left-image'>
-          <img src="/top-left-img.png" alt="" />
-        </div>
+       
         <div className="profile-details">
           <div className="content">
             <h1>Shashimal Liyanage</h1>
-            <h2>Undergraduate Student<span> & Freelancing</span><span><br/>Video-grapher</span></h2>
+            <h2>Undergraduate Student<span> & Freelancing</span><span><br />Video-grapher</span></h2>
             <p>
-            As a videographer and advanced editor, I specialize in creating cinematic wedding films and event short films that beautifully capture the essence of each moment. With extensive experience in both shooting and editing, I combine a creative eye with technical precision to produce visually stunning films. My advanced editing skills allow me to craft seamless, engaging narratives that highlight the emotions and energy of weddings and events, ensuring that every project tells a unique and memorable story.
+              As a videographer and advanced editor, I specialize in creating cinematic wedding films and event short films that beautifully capture the essence of each moment. With extensive experience in both shooting and editing, I combine a creative eye with technical precision to produce visually stunning films. My advanced editing skills allow me to craft seamless, engaging narratives that highlight the emotions and energy of weddings and events, ensuring that every project tells a unique and memorable story.
             </p>
             <div className='achievements-sec'>
               <div className='achievement'>
@@ -204,16 +202,14 @@ export const About = () => {
           </div>
 
           <div className='image1'>
-        <img src="/shadow.png" alt="" />
-      </div>
-      <div className='image2 '>
-        <img src="" alt="" />
-      </div>
+            <img src="/shadow.png" alt="" />
+          </div>
+         
         </div>
       </div>
 
       {/* Decorative Image */}
-    
+
     </>
   );
 };

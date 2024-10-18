@@ -117,7 +117,7 @@
   
   }
   .feedback-cards-container {
-    max-height:420px ; 
+    max-height:auto ; 
    padding-right: 8px; 
   }
   

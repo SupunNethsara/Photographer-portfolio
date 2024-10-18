@@ -23,6 +23,9 @@ const [activeItem, setActiveItem] = useState('All');
 
   return (
     <div className='port'>
+        <div className='image1'>
+            <img src="/shadow.png" alt="" />
+          </div>
       <div className='header-sec'>
         <h2>Education and Experience</h2>
         <h1>Latest Project</h1>
@@ -77,7 +80,9 @@ const [activeItem, setActiveItem] = useState('All');
       </div>
       <div className='menu-section'>
         <Outlet />
+        
       </div>
+     
     </div>
   );
 };

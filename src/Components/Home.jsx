@@ -62,10 +62,10 @@ const Home = () => {
       </div>
       <div className='social-icons'>
         
-        <div><a href="" ><FacebookOutlinedIcon className='so' sx={{ color: '#1E90FF' }} /></a></div>
-        <div><a href="https://wa.me/+94714677205" ><WhatsAppIcon className='so' sx={{ color: ' #1E90FF' }} /></a></div>
-        <div><TwitterIcon className='so' sx={{ color: '#1E90FF' }} /></div>
-        <div><InstagramIcon className='so' sx={{ color: ' #1E90FF' }} /></div>
+        <div className='ss'><a href="" ><FacebookOutlinedIcon className='so' sx={{ color: '#1E90FF' }} /></a></div>
+        <div className='ss'><a href="https://wa.me/+94714677205" ><WhatsAppIcon className='so' sx={{ color: ' #1E90FF' }} /></a></div>
+        <div className='ss'><TwitterIcon className='so' sx={{ color: '#1E90FF' }} /></div>
+        <div className='ss'><InstagramIcon className='so' sx={{ color: ' #1E90FF' }} /></div>
       </div>
       <div className='main-sec'>
 
@@ -129,7 +129,7 @@ const Home = () => {
         <div className='image'>
           <div className='img-container'>
             <img src="removebagriund1.png" alt="" className="main-image" />
-            <img  src="blue-ring.png" alt="" className="ring-animation" />
+            <img  src="—Pngtree—blue ring ring ring_3775632.png" alt="" className="ring-animation" />
           </div>
           <div className="img-box">
             <div className="img-item">
@@ -140,9 +140,7 @@ const Home = () => {
             <img src="/shadow.png" alt="" />
           </div>
         </div>
-        <div className='left-image '>
-          <img src="3" alt="" />
-        </div>
+       
       </div>
 
     </div>

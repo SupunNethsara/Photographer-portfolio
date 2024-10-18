@@ -6,31 +6,19 @@
 }
 
 
-.about-container .image1{
+.about-container .image1 {
     position: fixed;
-      right: 0px;
-      top: 0;
-      max-width: 300px;
-      height: auto;
-      background-size: cover;
-      background-position: bottom right;
-      background-repeat: no-repeat;
-     mix-blend-mode:exclusion;
-      z-index: 0;
-     
-  }
-  .about-container  .image2 {
-    position: fixed;
+    right: 0px;
     top: 0;
-    left: 0;
-    max-width: 200px;
+    max-width: 600px;
     height: auto;
     background-size: cover;
     background-position: bottom right;
     background-repeat: no-repeat;
-   mix-blend-mode:exclusion;
-    z-index: 0;
-  }
+    pointer-events: none; /* Ensures the image does not block interactions */
+    z-index: 1; /* Keeps the image in the background */
+}
+ 
 
 .profile-details {
     width: 50%;
@@ -45,6 +33,8 @@
     justify-content: center;
     align-items: center;
     text-align: left;
+    z-index: 2;
+    position: relative;
 }
 
 
@@ -413,12 +403,12 @@
      .profile-details .content {
         width: 100%;
         height: auto;
-        margin-top: 25%;
-        margin-left: 8%;
+        margin-top: 10%;
+        margin-left: 12%;
     }
     
     .edu-content {
-        margin-top: 19%;
+        margin-top: 10%;
         margin-left: 8%;
         
     }
@@ -435,7 +425,7 @@
         font-size: 19px;
         font-weight: 700;
         text-transform: uppercase;
-        display: grid;
+        
     }
     
     .profile-details p {

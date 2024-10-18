@@ -16,6 +16,7 @@
   background-repeat: no-repeat;
  mix-blend-mode:exclusion;
   z-index: 0;
+  pointer-events: none;
  
 }
 .services-feedback>div {
@@ -125,14 +126,23 @@
   border: 1px solid #1370fa;
   border-radius: 20px;
 }
+@media (min-width: 1200px){
+  .services-feedback .model .heading {
+    margin: 1px 10px 40px 10px;
+  }
+ 
+}
 
-@media (min-width: 1024px) and (max-width: 1640px) {
+@media (min-width: 993px) and (max-width: 1200px) {
+
+ 
   .services-feedback {
     padding: 5px;
+
   }
 
   .services-feedback .model .heading {
-    margin: 10px 10px 10px 10px;
+    margin: 10px 10px 5px 30px;
   }
 
   .services-feedback .model {
@@ -165,8 +175,9 @@
   }
 
   .boxes-serv .row .boxs {
- margin: 10px;
+ margin: 10px 20px 5px 20px;
    padding: 10px;
+   
  }
 
   .boxes-serv .row .boxs i {
@@ -198,8 +209,26 @@
     font-size: 13px;
   }
 }
+@media (min-width: 769px) and (max-width: 992px){
+  .services-feedback {
+    flex-wrap: wrap;
+    padding: 8px;
+  }
 
-@media (min-width: 800px) and (max-width: 1200px) {
+  .services-feedback .model {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+  }
+
+  .services-feedback .feedback {
+    width: 100%;
+    height: auto;
+    margin: 40px;
+}
+}
+@media (min-width: 576px) and (max-width: 768px)  {
   .services-feedback {
     flex-wrap: wrap;
     padding: 8px;
@@ -223,7 +252,7 @@
 
 }
 
-@media (min-width: 200px) and (max-width: 800px) {
+@media (max-width:576px) {
   .services-feedback {
     flex-wrap: wrap;
     height: auto;

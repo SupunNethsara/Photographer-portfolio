@@ -10,72 +10,63 @@ background:linear-gradient(to right ,rgb(8, 8, 8),#1f1e1e, black,rgb(39, 38, 38)
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 5;
+
 }
 
 .social-icons {
-  position: absolute;
-  top: 10px;
-  right: 20px;
+  position: fixed;
+ 
+  right: 0;
+  float: right;
   display: flex;
   gap: 24px;
   z-index: 200;
-  margin-top: 20px;
+  margin:10px;
+
+
 }
 
+.social-icons .so {
+  font-size: 24px;
 
-.top-right-image{
+}
+
+.social-icons div {
+  justify-content: center;
+  background-color: transparent;
+  padding: 2px;
+  border-radius: 50%;
+  display: flex;
+  box-shadow: 0 4px 8px rgba(0, 81, 255, 0.6);
+  cursor: pointer;
+}
+
+.top-right-image {
   position: fixed;
-    right: 0px;
-    top: 0;
-    max-width: 500px;
-    height: auto;
-    background-size: cover;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-   mix-blend-mode:exclusion;
-    z-index: 0;
-   
+  right: 0px;
+  top: 0;
+  max-width: 500px;
+  height: auto;
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  pointer-events: none;
+
 }
-.logo{
+
+.logo {
   width: 100%;
   height: auto;
 }
-.logo img{
+
+.logo img {
   width: 120px;
   height: 80px;
   position: fixed;
   margin-left: 180px;
   margin-top: 20px;
-
 }
 
-.left-image {
-  position: fixed;
-  
- bottom: 0;
-  left: 0px;
-  width: 600px;
-  height: 200px;
-  background-size: cover;
-  background-position: bottom right;
-  background-repeat: no-repeat;
- mix-blend-mode:color-dodge;
-  z-index: 1;
-}
-
-
-.social-icons div {
-  background-color: transparent;
-  padding: 5px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #1E90FF;
-  box-shadow: 0 4px 8px rgba(0, 81, 255, 0.6);
-  cursor: pointer;
-}
 
 .main-sec .text {
   width: 50%;
@@ -92,7 +83,9 @@ background:linear-gradient(to right ,rgb(8, 8, 8),#1f1e1e, black,rgb(39, 38, 38)
 
 .text-section {
   margin-left: 18%;
-  margin-top: 19%;
+  margin-top: 22%;
+
+
 
   /* opacity: 0;
   transform: translateY(20px);
@@ -174,9 +167,11 @@ background:linear-gradient(to right ,rgb(8, 8, 8),#1f1e1e, black,rgb(39, 38, 38)
   justify-content: center;
   background-color: rgba(7, 44, 255, 0.1);
 }
-.cv{
+
+.cv {
   z-index: 10;
 }
+
 .cv button {
   width: 200px;
   min-width: 190px;
@@ -194,7 +189,7 @@ background:linear-gradient(to right ,rgb(8, 8, 8),#1f1e1e, black,rgb(39, 38, 38)
   background-color: #007bff;
   padding: 0.75rem 1.5rem;
   border-radius: 5px;
-  
+
 }
 
 .cv button:hover {
@@ -253,13 +248,17 @@ background:linear-gradient(to right ,rgb(8, 8, 8),#1f1e1e, black,rgb(39, 38, 38)
 }
 
 .ring-animation {
-  position: absolute; /* Keep ring on top of the other image */
+  position: absolute;
+  /* Keep ring on top of the other image */
   top: 55%;
-  left: 43%;
+  left: 40%;
   transform: translate(-50%, -50%);
-  width: 600px; /* Adjust size as needed */
-  height: 600px; /* Adjust size as needed */
-  animation: rotateRing 15s linear infinite;
+  width: 600px;
+
+  height: 600px;
+
+  animation: rotateRing 20s ease-in-out infinite; /* Eased animation for smoother transitions */
+  mix-blend-mode: color-dodge;
 
   /* Apply the rotation animation */
 }
@@ -269,6 +268,11 @@ background:linear-gradient(to right ,rgb(8, 8, 8),#1f1e1e, black,rgb(39, 38, 38)
   0% {
     transform: translate(-50%, -50%) rotate(0deg); /* Initial position */
   }
+
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg); /* Halfway point */
+  }
+
   100% {
     transform: translate(-50%, -50%) rotate(360deg); /* Full rotation */
   }
@@ -280,16 +284,6 @@ background:linear-gradient(to right ,rgb(8, 8, 8),#1f1e1e, black,rgb(39, 38, 38)
     opacity: 0;
     transform: translateY(20px);
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
 
   100% {
     opacity: 1;
@@ -297,19 +291,6 @@ background:linear-gradient(to right ,rgb(8, 8, 8),#1f1e1e, black,rgb(39, 38, 38)
   }
 }
 
-.blob {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  height: 400px;
-  background: linear-gradient(135deg, #0a80f7, #0a33ee);
-  border-radius: 50%;
-  z-index: 1;
-  animation: blobMoveDown 2s ease-out forwards, blobAnimation 5s infinite;
-display: none;
-}
 
 /* @keyframes blobMoveDown {
   0% {
@@ -407,49 +388,52 @@ display: none;
   mix-blend-mode: lighten;
 }
 
-@media (min-width: 1200px) and (max-width:1500px){
+@media (min-width: 1200px) and (max-width:1500px) {
   .social-icons {
     top: 2px;
     right: 10px;
     gap: 20px;
     margin-top: 10px;
-}
-.social-icons .so{
-  font-size: 20px;
-}
-
-  .main-sec .text {
-  padding: 10px;
   }
 
- .text-section {
+  .social-icons .so {
+    font-size: 20px;
+  }
+
+  .main-sec .text {
+    padding: 10px;
+
+  }
+
+  .text-section {
     margin-left: 8%;
-    margin-top: 14%;
- }
+    margin-top: 25%;
+  }
+
   .typewrite {
     font-size: 2rem;
     min-Height: 20px;
     margin-Top: 8px;
-   }
+  }
 
   .text h1 {
-   font-size: 1rem;
-}
+    font-size: 1rem;
+  }
 
   .text h3 {
-font-size: 22px;
-}
+    font-size: 22px;
+  }
 
   .text p {
     font-size: 13px;
     margin-top: 1rem;
-    }
-
-  .software {
-margin-top: 20px;
   }
 
- .cv button {
+  .software {
+    margin-top: 20px;
+  }
+
+  .cv button {
     width: 150px;
     height: 100%;
     min-height: 100%;
@@ -458,96 +442,127 @@ margin-top: 20px;
     font-size: 12px;
   }
 
- .img-container {
- margin-left:5%;
- }
+  .img-container {
+    margin-left: 5%;
+  }
 
- .blob {
- width: 320px;
-  height: 320px;
-  top: 50%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-   }
+  .blob {
+    width: 320px;
+    height: 320px;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
 
 }
+
 /*lapop*/
 
 @media (min-width: 993px) and (max-width: 1200px) {
 
-
+  .logo img {
+    width: 100px;
+    height: 70px;
+    position: fixed;
+    margin-left: 60px;
+    margin-top: 5px;
+  }
+  
   .social-icons {
     top: 2px;
     right: 10px;
     gap: 20px;
     margin-top: 10px;
-}
-.social-icons .so{
-  font-size: 20px;
-}
+  }
+
+  .social-icons .so {
+    font-size: 20px;
+  }
 
   .main-sec .text {
-  padding: 10px;
+    padding: 10px;
   }
 
- .text-section {
+  .text-section {
     margin-left: 8%;
-    margin-top: 10%;
- }
+    margin-top: 20%;
+
+  }
+
   .typewrite {
-    font-size: 2rem;
+    font-size: 1.8rem;
     min-Height: 20px;
     margin-Top: 8px;
-   }
-
-  .text h1 {
-   font-size: 1rem;
-}
-
-  .text h3 {
-font-size: 22px;
-}
-
-  .text p {
-    font-size: 13px;
-    margin-top: 1rem;
-    }
-
-  .software {
-margin-top: 20px;
   }
 
- .cv button {
-    width: 200px;
-    min-width: 190px;
+  .text h1 {
+    font-size: 0.8rem;
+  }
+
+  .text h3 {
+    font-size: 18px;
+  }
+
+  .text p {
+    font-size: 11px;
+    margin-top: 1rem;
+  }
+
+  .software {
+    margin-top: 22px;
+  }
+
+  .cv button {
+    width: 170px;
+    min-width: 150px;
     height: 100%;
     min-height: 100%;
     margin: 50px 50px 0px 0px;
     padding: 0.65rem 1.5rem;
-  
+
   }
 
- .img-container {
- margin-left:5%;
- }
-
- .blob {
- width: 350px;
-  height: 350px;
-   }
+  .img-container {
+    margin-left: 5%;
+  }
+  
+.ring-animation {
+  position: absolute;
+  
+  top: 55%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+height: 400px;
+}
+  .blob {
+    width: 350px;
+    height: 350px;
+  }
 
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
   .main-sec {
     display: grid;
-   
-  }
+ }
+ .logo img {
+  width: 120px;
+  height: 80px;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
 
   .social-icons {
     padding: 0;
     margin: 0;
     gap: 20px;
+    position: fixed;
+    right: 0;
+    margin: 10px;
+    top: 0;
 
   }
 
@@ -557,7 +572,7 @@ margin-top: 20px;
   }
 
   .social-icons .so {
-    font-size: 25px;
+    font-size: 28px;
   }
 
   .main-sec .text {
@@ -575,7 +590,7 @@ margin-top: 20px;
 
   .text-section {
     margin-left: 2%;
-    margin-top: 10%;
+    margin-top: 3%;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -640,33 +655,44 @@ margin-top: 20px;
 
   .img-box {
     position: relative;
-    width: 40vw;
-    height: 40vw;
-    margin-left: 23%;
-    margin-top: 10%;
+    width: 37vw;
+    height: 37vw;
+    margin-left: 26%;
+    margin-top: 2%;
     margin-bottom: 2%;
     border-radius: 50%;
     padding: 6px;
     overflow: hidden;
     display: block;
   }
-  .img-box .img-item{
-    background-color: #17243b;
+
+  .img-box .img-item {
+    background-color:#0e1a2b;
   }
 
 
 }
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .main-sec {
     display: grid;
-    
+  }
+
+  .logo img {
+    width: 100px;
+    height: 70px;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 5px;
   }
 
   .social-icons {
     padding: 0;
-    margin: 0;
+    margin: 10px;
     gap: 18px;
+    display: flex;
+    position: fixed;
+    right: 0;
 
   }
 
@@ -694,7 +720,7 @@ margin-top: 20px;
 
   .text-section {
     margin-left: 2%;
-    margin-top: 2%;
+    margin-top: 7%;
     margin-right: 2%;
     justify-content: center;
     align-items: center;
@@ -719,7 +745,7 @@ margin-top: 20px;
   .text p {
     text-align: center;
     font-size: 15px;
-    margin: 2px 10px 2px 2px;
+    margin: 2px 10px 2px 10px;
     width: 100%;
     padding-right: 5px;
   }
@@ -760,10 +786,10 @@ margin-top: 20px;
 
   .img-box {
     position: relative;
-    width: 36vw;
-    height: 36vw;
+    width: 32vw;
+    height: 32vw;
     margin-left: 30%;
-    margin-top: 10%;
+    margin-top: 1%;
     margin-bottom: 2%;
     border-radius: 50%;
     padding: 5px;
@@ -771,20 +797,34 @@ margin-top: 20px;
     display: block;
   }
 
+  .img-box .img-item {
+    background-color: #0e1a2b;
+  }
 
 }
 
 @media (max-width:576px) {
   .main-sec {
     display: grid;
-  
+
+  }
+
+  .logo img {
+    width: 70px;
+    height: 50px;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 5px;
   }
 
   .social-icons {
     padding: 0;
-    margin: 0;
+    margin: 2px 2px 2px 2px;
     gap: 18px;
-
+    top: 0;
+    right: 0;
+    display: grid;
+    position: fixed;
   }
 
   .social-icons>div {
@@ -793,7 +833,7 @@ margin-top: 20px;
   }
 
   .social-icons .so {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .main-sec .text {
@@ -880,16 +920,17 @@ margin-top: 20px;
     width: 50vw;
     height: 50vw;
     margin-left: 23%;
-    margin-top: 19%;
+    margin-top: 2%;
     margin-bottom: 2%;
     border-radius: 50%;
     padding: 5px;
     overflow: hidden;
     display: block;
   }
+
   .img-box .img-item {
-   background: #182338;
-  
+    background: #192842;
+
   }
 
 

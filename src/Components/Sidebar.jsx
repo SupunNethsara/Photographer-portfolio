@@ -36,18 +36,18 @@ const Sidebar = () => {
       </div>
 
       {/* Logo Section */}
-      <div className="logos flex justify-center items-center mt-6">
-        <img
-          src="logo-sashi.png" 
-          alt="Logo" 
-          className={`w-16 h-16  rounded-full transition-all duration-500 ${
-            open ? "w-28 h-28" : "w-10 h-10"
-          }`}
-        />
-      </div>
+ {/* Logo Section */}
+<div className={`logos flex justify-center items-center mt-6 transition-all duration-500 ${!open && 'opacity-0'}`}>
+  <img
+    src="logo-sashi.png"
+    alt="Logo"
+    className={`rounded-full transition-all duration-500 ${open ? "w-28 h-28" : "w-0 h-0"}`}
+  />
+</div>
+
 
       {/* Menu Items */}
-      <div className="icons-sec mt-20 flex flex-col gap-8 relative">
+      <div className="icons-sec mt-36 flex flex-col gap-8 relative">
         {menus.map((menu, i) => (
           <Link
             to={menu.link}
