@@ -22,7 +22,7 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`bg-[#141414] min-h-screen ${
+      className={`bg-[#050c18] min-h-screen ${
         open ? "w-72" : "w-16"
       } duration-500 text-gray-100 px-4`}
     >

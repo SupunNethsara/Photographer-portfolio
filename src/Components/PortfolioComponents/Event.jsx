@@ -1,7 +1,7 @@
 import React,{  useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 import '../PortfolioComponents/Css/All.css';
-export const Contentcreater = () => {
+export const Events = () => {
 
   useEffect(() => {
     ScrollReveal().reveal('.all', {
@@ -22,7 +22,7 @@ export const Contentcreater = () => {
             <div className="card-content">
               <h3>Beach Photo</h3>
               <p>Would you like to know more About this ? .You Can get more information about this by clicking here .Get in touch</p>
-              <i class="ri-external-link-fill"></i>
+              <a href='https://drive.google.com/file/d/1uKZlCrwq2McZafVggazGZSv9I1zNCmPP/view?usp=drive_link'><i class="ri-external-link-fill"></i></a>
             </div>
           </div>
           <div className='card-all'>
@@ -30,7 +30,7 @@ export const Contentcreater = () => {
             <div className="card-content">
               <h3>Beach Photo</h3>
               <p>Would you like to know more About this ? .You Can get more information about this by clicking here .Get in touch</p>
-              <i class="ri-external-link-fill"></i>
+              <a href='https://drive.google.com/file/d/1uKZlCrwq2McZafVggazGZSv9I1zNCmPP/view?usp=drive_link'><i class="ri-external-link-fill"></i></a>
             </div>
           </div>
           <div className='card-all'>
@@ -38,7 +38,7 @@ export const Contentcreater = () => {
             <div className="card-content">
               <h3>Beach Photo</h3>
               <p>Would you like to know more About this ? .You Can get more information about this by clicking here .Get in touch</p>
-              <i class="ri-external-link-fill"></i>
+              <a href='https://drive.google.com/file/d/1uKZlCrwq2McZafVggazGZSv9I1zNCmPP/view?usp=drive_link'><i class="ri-external-link-fill"></i></a>
             </div>
           </div>
           <div className='card-all'>
@@ -46,7 +46,7 @@ export const Contentcreater = () => {
             <div className="card-content">
               <h3>Beach Photo</h3>
               <p>Would you like to know more About this ? .You Can get more information about this by clicking here .Get in touch</p>
-              <i class="ri-external-link-fill"></i>
+              <a href='https://drive.google.com/file/d/1uKZlCrwq2McZafVggazGZSv9I1zNCmPP/view?usp=drive_link'><i class="ri-external-link-fill"></i></a>
             </div>
           </div>
           <div className='card-all'>
@@ -54,7 +54,7 @@ export const Contentcreater = () => {
             <div className="card-content">
               <h3>Beach Photo</h3>
               <p>Would you like to know more About this ? .You Can get more information about this by clicking here .Get in touch</p>
-              <i class="ri-external-link-fill"></i>
+              <a href='https://drive.google.com/file/d/1uKZlCrwq2McZafVggazGZSv9I1zNCmPP/view?usp=drive_link'><i class="ri-external-link-fill"></i></a>
             </div>
           </div>
           <div className='card-all'>
@@ -62,7 +62,7 @@ export const Contentcreater = () => {
             <div className="card-content">
               <h3>Beach Photo</h3>
               <p>Would you like to know more About this ? .You Can get more information about this by clicking here .Get in touch</p>
-              <i class="ri-external-link-fill"></i>
+              <a href='https://drive.google.com/file/d/1uKZlCrwq2McZafVggazGZSv9I1zNCmPP/view?usp=drive_link'><i class="ri-external-link-fill"></i></a>
             </div>
           </div>
         </div>

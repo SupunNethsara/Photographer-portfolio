@@ -45,7 +45,7 @@ const [activeItem, setActiveItem] = useState('All');
           </li>
           <li>
             <NavLink 
-              to="video-editing" 
+              to="shorts" 
               style={{
                 color: activeItem === 'Video Editing' ? '#1E90FF' :  '#ffffff'
               }}
@@ -56,7 +56,7 @@ const [activeItem, setActiveItem] = useState('All');
           </li>
           <li>
             <NavLink 
-              to="photo-shooting" 
+              to="weddings" 
               style={{
                 color: activeItem === 'Photo Shooting' ? '#1E90FF' :  '#ffffff'
               }}
@@ -67,7 +67,7 @@ const [activeItem, setActiveItem] = useState('All');
           </li>
           <li>
             <NavLink 
-              to="contents" 
+              to="events" 
               style={{
                 color: activeItem === 'Contents' ? '#1E90FF' :  '#ffffff'
               }}

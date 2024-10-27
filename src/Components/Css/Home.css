@@ -667,7 +667,7 @@ height: 400px;
   }
 
   .img-box .img-item {
-    background-color:#0e1a2b;
+    background:#0a1424;
   }
 
 
@@ -798,7 +798,7 @@ height: 400px;
   }
 
   .img-box .img-item {
-    background-color: #0e1a2b;
+    background:#0a1424;
   }
 
 }
@@ -929,8 +929,8 @@ height: 400px;
   }
 
   .img-box .img-item {
-    background: #192842;
-
+    background:#0a1424;
+    border: none;
   }
 
 

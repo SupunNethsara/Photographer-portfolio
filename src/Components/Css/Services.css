@@ -5,6 +5,7 @@
   padding: 15px;
 
 }
+
 .top-left-image {
   position: fixed;
   left: 0px;
@@ -14,11 +15,12 @@
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
- mix-blend-mode:exclusion;
+  mix-blend-mode: exclusion;
   z-index: 0;
   pointer-events: none;
- 
+
 }
+
 .services-feedback>div {
   margin: 5px;
 }
@@ -28,7 +30,7 @@
 }
 
 .services-feedback .model {
-  width: 65%;
+  width: 70%;
   height: 100%;
   padding: 20px;
   /* border: 2px solid rgba(153, 150, 150, 0.1); */
@@ -36,7 +38,7 @@
 }
 
 .services-feedback .feedback {
-  width: 35%;
+  width: 30%;
   height: 100%;
   position: relative;
   border: 1px solid gray;
@@ -65,8 +67,8 @@
 }
 
 .services-feedback .model .heading p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
   color: #b0b0b0;
   margin-top: 30px;
   word-spacing: 2px;
@@ -79,6 +81,7 @@
   height: auto;
   padding: 8px;
   display: grid;
+
 }
 
 .boxes-serv .row {
@@ -97,45 +100,71 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
 }
 
 .boxes-serv .row .boxs i {
-  font-size: 40px;
+  font-size: 30px;
   color: #1370fa;
 }
 
 .boxes-serv .row .boxs h2 {
-  font-size: 22px;
+  font-size: 17px;
   color: #ffffff;
   font-weight: 500;
 }
 
 .boxes-serv .row .boxs p {
   color: #b0b0b0;
-  font-size: 13px;
+  font-size: 12.3px;
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .boxes-serv .row .boxs button {
-  width: 200px;
+  width: 120px;
   height: auto;
-  padding: 12px;
+  padding: 7px;
   background-color: #1370fa;
   color: #fff;
   margin-top: 16px;
   border: 1px solid #1370fa;
   border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
 }
-@media (min-width: 1200px){
+
+@media (min-width: 1200px) {
+
   .services-feedback .model .heading {
-    margin: 1px 10px 40px 10px;
+    margin: 5px 5px 0px 20px;
   }
- 
+
+  .services-feedback .model .heading p {
+    font-size: 14px;
+  }
+
+  .services-feedback .model {
+    padding: 10px;
+  }
+
+  .services-feedback .model .heading h4 {
+    font-size: 14px;
+  }
+
+  .services-feedback .model .heading h2 {
+    font-size: 28px
+  }
+  .boxes-serv{
+    margin-top: 20px;
+  }
+
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
 
- 
+
   .services-feedback {
     padding: 5px;
 
@@ -166,33 +195,33 @@
   .services-feedback .model .heading p {
     font-size: 13px;
     margin-top: 18px;
- }
+  }
 
 
   .boxes-serv .row {
-    
+
     margin-top: 5px;
   }
 
   .boxes-serv .row .boxs {
- margin: 10px 20px 5px 20px;
-   padding: 10px;
-   
- }
+    margin: 10px 20px 5px 20px;
+    padding: 10px;
+
+  }
 
   .boxes-serv .row .boxs i {
     font-size: 40px;
- 
+
   }
 
   .boxes-serv .row .boxs h2 {
     font-size: 16px;
     text-transform: uppercase;
-    
+
   }
 
   .boxes-serv .row .boxs p {
- 
+
     font-size: 12px;
     padding: 10px;
   }
@@ -209,7 +238,8 @@
     font-size: 13px;
   }
 }
-@media (min-width: 769px) and (max-width: 992px){
+
+@media (min-width: 769px) and (max-width: 992px) {
   .services-feedback {
     flex-wrap: wrap;
     padding: 8px;
@@ -226,9 +256,10 @@
     width: 100%;
     height: auto;
     margin: 40px;
+  }
 }
-}
-@media (min-width: 576px) and (max-width: 768px)  {
+
+@media (min-width: 576px) and (max-width: 768px) {
   .services-feedback {
     flex-wrap: wrap;
     padding: 8px;
@@ -248,8 +279,7 @@
 
 
   }
-
-
+ 
 }
 
 @media (max-width:576px) {
@@ -259,7 +289,8 @@
     padding: 5px;
     display: flex;
   }
-  .services-feedback .boxs{
+
+  .services-feedback .boxs {
     margin-top: 15px;
   }
 
@@ -283,5 +314,20 @@
 
   .boxes-serv .row {
     flex-wrap: wrap;
+  }
+  .boxes-serv .row .boxs p {
+    color: #b0b0b0;
+    font-size: 11px;
+
+  }
+  .services-feedback .model .heading p {
+    font-size: 12px;
+  }
+  .services-feedback .model .heading h4 {
+    font-size: 15px;
+  }
+
+  .services-feedback .model .heading h2 {
+    font-size: 23px
   }
 }

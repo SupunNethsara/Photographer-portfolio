@@ -106,7 +106,7 @@ export const About = () => {
               </div>
             </div>
             <div className="circle-text mx-auto  my-6">
-              <Link href={'#'} className=" relative w-[165px] h-[165px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group">
+            <Link href={'#'} className=" relative w-[165px] h-[165px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group">
                 <img
                   src="/rounded-text.png"
                   width={121}

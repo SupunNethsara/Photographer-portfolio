@@ -8,15 +8,16 @@ import Contact from './Components/Contact'
 import Sidebar from './Components/Sidebar'
 import Gallery from './Components/Gallery';
 import Portfolio from './Components/Portfolio';
-import { Vedioediter } from './Components/PortfolioComponents/Vedioediter';
-import { Photographer } from './Components/PortfolioComponents/Photographer';
-import { Contentcreater } from './Components/PortfolioComponents/Contentcreater';
+
 import { Services } from './Components/Services';
 import { All } from './Components/PortfolioComponents/All';
 import { Skills } from './Components/About-component/Skills/Skills';
 import { Experience } from './Components/About-component/Experience/Experience';
 
 import { Education } from './Components/About-component/Education/Education';
+import { Shorts } from './Components/PortfolioComponents/Shorts';
+import { Weddings } from './Components/PortfolioComponents/Weddings';
+import { Events } from './Components/PortfolioComponents/Event';
 
 
 
@@ -43,9 +44,9 @@ function App() {
             <Route path='/services' element={<Services />}></Route>
             <Route path='/portfolio' element={<Portfolio />}>
               <Route index element={<All />} />
-              <Route path="video-editing" element={<Vedioediter />} />
-              <Route path="photo-shooting" element={<Photographer />} />
-              <Route path="contents" element={<Contentcreater />} />
+              <Route path="shorts" element={<Shorts />} />
+              <Route path="weddings" element={<Weddings />} />
+              <Route path="events" element={<Events />} />
             </Route>
             <Route path='/contact' element={<Contact />}></Route>
             <Route path='/gallery' element={<Gallery />}></Route>

@@ -12,7 +12,7 @@
 }
 
 .t-title {
-  color: #f0eaea;
+  color: #b1abab;
   margin: 20px;
   font-size: 20px;
 }
@@ -50,7 +50,8 @@
   font-style: italic;
   color: #b0b3b8;
   margin-bottom: 1rem;
-  font-size: 13px;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .card__details h4 {

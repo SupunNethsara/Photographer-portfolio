@@ -3,6 +3,7 @@
     align-items: center;
     text-align: center;
     margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 .header-sec h1{
     color: #1E90FF;
@@ -11,7 +12,7 @@
 }
 .header-sec h2{
     color: #ffffff;
-    font-size: 13px;
+    font-size: 11px;
 }
 .image1{
     position: fixed;
@@ -50,6 +51,8 @@
     cursor: pointer;
     text-decoration: none;
     font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
 .nav ul li:hover{
    

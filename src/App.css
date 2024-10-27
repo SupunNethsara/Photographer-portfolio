@@ -10,12 +10,11 @@ p{
   width: 100%;
   height: 100%;
   display: flex;
-  background:#0e1a2b;
+  background:#080f1a;
 }
 .sidebar{
   width: 3%;
 height: 100%;
-
 z-index: 10;
 
 }
@@ -70,7 +69,7 @@ z-index: 10;
    height: 100vh;
    overflow-y: auto;
     /* background: white; */
-    background:linear-gradient(135deg,#1A2B48,#0D0D0D );
+    background:#080f1a;
   
   }
   .sidebar{

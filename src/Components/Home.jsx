@@ -10,7 +10,7 @@ import softwareitem5 from '../assets/pngwing4.png';
 import softwareitem6 from '../assets/brand-1.png';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import { FaTiktok } from 'react-icons/fa';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Link, useNavigate } from 'react-router-dom';
 import ScrollReveal from 'scrollreveal';
@@ -61,11 +61,11 @@ const Home = () => {
         <img src="logo-sashi.png" alt="" />
       </div>
       <div className='social-icons'>
-        
+
         <div className='ss'><a href="" ><FacebookOutlinedIcon className='so' sx={{ color: '#1E90FF' }} /></a></div>
         <div className='ss'><a href="https://wa.me/+94714677205" ><WhatsAppIcon className='so' sx={{ color: ' #1E90FF' }} /></a></div>
-        <div className='ss'><TwitterIcon className='so' sx={{ color: '#1E90FF' }} /></div>
-        <div className='ss'><InstagramIcon className='so' sx={{ color: ' #1E90FF' }} /></div>
+        <div className="ss"><a href="https://www.tiktok.com/@shashimal_liyanage"><FaTiktok className="so" style={{ color: '#1E90FF', fontSize: '20px' }} /></a></div>
+        <div className='ss'><a href=''><InstagramIcon className='so' sx={{ color: ' #1E90FF' }} /></a></div>
       </div>
       <div className='main-sec'>
 
@@ -129,7 +129,7 @@ const Home = () => {
         <div className='image'>
           <div className='img-container'>
             <img src="removebagriund1.png" alt="" className="main-image" />
-            <img  src="—Pngtree—blue ring ring ring_3775632.png" alt="" className="ring-animation" />
+            <img src="—Pngtree—blue ring ring ring_3775632.png" alt="" className="ring-animation" />
           </div>
           <div className="img-box">
             <div className="img-item">
@@ -140,7 +140,7 @@ const Home = () => {
             <img src="/shadow.png" alt="" />
           </div>
         </div>
-       
+
       </div>
 
     </div>

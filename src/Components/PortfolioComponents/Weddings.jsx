@@ -1,7 +1,7 @@
 import React,{  useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 import '../PortfolioComponents/Css/All.css';
-export const Photographer = () => {
+export const Weddings = () => {
   useEffect(() => {
     ScrollReveal().reveal('.all', {
       origin: 'bottom',
@@ -16,51 +16,51 @@ export const Photographer = () => {
       <div className="all">
         <div className="row">
           <div className='card-all'>
-            <img src="/beach3.jpg" alt="" srcset="" />
+            <img src="/wedding1.png" alt="" srcset="" />
             <div className="card-content">
-              <h3>Beach Photo</h3>
+              <h3>Arosha & Murray</h3>
               <p>Would you like to know more About this ? .You Can get more information about this by clicking here .Get in touch</p>
-              <i class="ri-external-link-fill"></i>
+              <a href='https://drive.google.com/file/d/1uKZlCrwq2McZafVggazGZSv9I1zNCmPP/view?usp=drive_link'><i class="ri-external-link-fill"></i></a>
             </div>
           </div>
           <div className='card-all'>
-            <img src="/beach3.jpg"  alt="" srcset="" />
+            <img src="/wedding3.png"  alt="" srcset="" />
             <div className="card-content">
-              <h3>Beach Photo</h3>
+              <h3>Arosha & Murray</h3>
               <p>Would you like to know more About this ? .You Can get more information about this by clicking here .Get in touch</p>
-              <i class="ri-external-link-fill"></i>
+              <a href='https://drive.google.com/file/d/1uKZlCrwq2McZafVggazGZSv9I1zNCmPP/view?usp=drive_link'><i class="ri-external-link-fill"></i></a>
             </div>
           </div>
           <div className='card-all'>
-            <img src="/beach3.jpg"  alt="" srcset="" />
+            <img src="/wedding2.png"  alt="" srcset="" />
             <div className="card-content">
-              <h3>Beach Photo</h3>
+              <h3>Arosha & Murray</h3>
               <p>Would you like to know more About this ? .You Can get more information about this by clicking here .Get in touch</p>
-              <i class="ri-external-link-fill"></i>
+              <a href='https://drive.google.com/file/d/1uKZlCrwq2McZafVggazGZSv9I1zNCmPP/view?usp=drive_link'><i class="ri-external-link-fill"></i></a>
             </div>
           </div>
           <div className='card-all'>
-            <img src="/beach3.jpg"  alt="" srcset="" />
+            <img src="/wedding4.jpg"  alt="" srcset="" />
             <div className="card-content">
-              <h3>Beach Photo</h3>
+              <h3>Sathsarani & Lahiru</h3>
               <p>Would you like to know more About this ? .You Can get more information about this by clicking here .Get in touch</p>
-              <i class="ri-external-link-fill"></i>
+              <a href='https://drive.google.com/file/d/1MjmIb77uuzu6dw5mbQ4g0qbfpkgd7fzK/view?usp=drive_link'><i class="ri-external-link-fill"></i></a>
             </div>
           </div>
           <div className='card-all'>
-            <img src="/beach3.jpg"  alt="" srcset="" />
+            <img src="/wedding5.jpg"  alt="" srcset="" />
             <div className="card-content">
-              <h3>Beach Photo</h3>
+              <h3>Sathsarani & Lahiru</h3>
               <p>Would you like to know more About this ? .You Can get more information about this by clicking here .Get in touch</p>
-              <i class="ri-external-link-fill"></i>
+              <a href='https://drive.google.com/file/d/1MjmIb77uuzu6dw5mbQ4g0qbfpkgd7fzK/view?usp=drive_link'><i class="ri-external-link-fill"></i></a>
             </div>
           </div>
           <div className='card-all'>
-            <img src="/beach3.jpg"  alt="" srcset="" />
+            <img src="/wedding6.jpg"  alt="" srcset="" />
             <div className="card-content">
-              <h3>Beach Photo</h3>
+              <h3>Sathsarani & Lahiru</h3>
               <p>Would you like to know more About this ? .You Can get more information about this by clicking here .Get in touch</p>
-              <i class="ri-external-link-fill"></i>
+              <a href='https://drive.google.com/file/d/1MjmIb77uuzu6dw5mbQ4g0qbfpkgd7fzK/view?usp=drive_link'><i class="ri-external-link-fill"></i></a>
             </div>
           </div>
         </div>
