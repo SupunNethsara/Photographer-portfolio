@@ -18,10 +18,10 @@
 }
 
 .all .row .card-all {
-    flex: 1 1 30%; /* Three cards per row */
-    max-width: 370px; /* Set a reasonable max-width */
+    flex: 1 1 30%; 
+    max-width: 370px; 
     height: 200px;
-    margin: 10px; /* Reduced margin for tighter spacing */
+    margin: 10px; 
     background-color: transparent;
     border-radius: 20px;
     position: relative;

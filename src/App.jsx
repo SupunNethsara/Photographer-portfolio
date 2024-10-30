@@ -18,13 +18,14 @@ import { Education } from './Components/About-component/Education/Education';
 import { Shorts } from './Components/PortfolioComponents/Shorts';
 import { Weddings } from './Components/PortfolioComponents/Weddings';
 import { Events } from './Components/PortfolioComponents/Event';
-
+import Backdrop from '@mui/material/Backdrop';
+import CircularProgress from '@mui/material/CircularProgress';
 
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <BrowserRouter>
@@ -33,6 +34,7 @@ function App() {
           <Sidebar />
         </div>
         <div className='drawer'>
+        
           <Routes>
             <Route path='/' element={<Home />}></Route>
             <Route path='/about' element={<About />}>

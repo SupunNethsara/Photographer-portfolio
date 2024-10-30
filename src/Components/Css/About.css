@@ -135,8 +135,15 @@
         align-items: center;
         text-align: left;
     }
-    
-    
+   
+    .profile-details .content  span {
+        font-size: 15px;
+        
+       }
+   .vdeo{
+    display: inline-block;
+    text-align: center;
+   }
     .profile-details .content {
         width: 100%;
         height: auto;

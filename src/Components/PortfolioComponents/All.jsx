@@ -8,7 +8,7 @@ export const All = () => {
       origin: 'bottom',
       distance: '50px',
       duration: 1000,
-      reset: true,  // Animation will happen every time it scrolls into view
+      reset: true, 
       easing: 'ease-in-out'
     });
   }, []);

@@ -14,6 +14,8 @@ import { FaTiktok } from 'react-icons/fa';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Link, useNavigate } from 'react-router-dom';
 import ScrollReveal from 'scrollreveal';
+import Backdrop from '@mui/material/Backdrop';
+import CircularProgress from '@mui/material/CircularProgress';
 const Home = () => {
 
   //scrolreveal///////////
@@ -43,29 +45,40 @@ const Home = () => {
 
     // Create a link element to trigger the download
     const link = document.createElement('a');
-    link.href = '/path/to/your/CV.pdf'; // Update with your actual CV file path
-    link.download = 'Supun_Nethsara_CV.pdf'; // The downloaded file name
+    link.href = '/cv.pdf'; // Update with your actual CV file path
+    link.download = 'shashimal_liyanage_Cv.pdf'; // The downloaded file name
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link); // Remove the link after downloading
   };
 
+
+  //backdrop
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const handleNavigate = () => {
-    navigate('/about'); // 
-  }
-
+    setOpen(true); 
+    setTimeout(() => {
+      setOpen(false); 
+      navigate('/about'); 
+    }, 2000); 
+  };
   return (
     <div>
+       <Backdrop sx={(theme) => ({ color: '#fff', zIndex: theme.zIndex.drawer + 1 })} open={open} onClick={handleClose}><CircularProgress color="inherit" /></Backdrop>
       <div className="logo">
         <img src="logo-sashi.png" alt="" />
       </div>
       <div className='social-icons'>
 
-        <div className='ss'><a href="" ><FacebookOutlinedIcon className='so' sx={{ color: '#1E90FF' }} /></a></div>
+        <div className='ss'><a href="https://www.facebook.com/profile.php?id=100013988086956" ><FacebookOutlinedIcon className='so' sx={{ color: '#1E90FF' }} /></a></div>
         <div className='ss'><a href="https://wa.me/+94714677205" ><WhatsAppIcon className='so' sx={{ color: ' #1E90FF' }} /></a></div>
         <div className="ss"><a href="https://www.tiktok.com/@shashimal_liyanage"><FaTiktok className="so" style={{ color: '#1E90FF', fontSize: '20px' }} /></a></div>
-        <div className='ss'><a href=''><InstagramIcon className='so' sx={{ color: ' #1E90FF' }} /></a></div>
+  
+        <div className='ss'><a href="https://www.instagram.com/shashimal_liyanage_/profilecard/?igsh=aDRzM2Q3dzFndWJu"><InstagramIcon className='so' sx={{ color: '#1E90FF' }} /></a></div>
       </div>
       <div className='main-sec'>
 
@@ -128,12 +141,12 @@ const Home = () => {
 
         <div className='image'>
           <div className='img-container'>
-            <img src="removebagriund1.png" alt="" className="main-image" />
+            <img src="WhatsApp Image 2024-10-29 at 14.06.46.png" alt="" className="main-image" />
             <img src="—Pngtree—blue ring ring ring_3775632.png" alt="" className="ring-animation" />
           </div>
           <div className="img-box">
             <div className="img-item">
-              <img src="shashimal.png" alt="" srcset="" />
+              <img src="profile.png" alt="" srcset="" />
             </div>
           </div>
           <div className='top-right-image '>

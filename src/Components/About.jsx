@@ -79,11 +79,11 @@ export const About = () => {
   return (
     <>
       <div className='about-container'>
-       
+
         <div className="profile-details">
           <div className="content">
             <h1>Shashimal Liyanage</h1>
-            <h2>Undergraduate Student<span> & Freelancing</span><span><br />Video-grapher</span></h2>
+            <h2>Undergraduate Student<span className='vdeo'><span> & Freelancing</span><span> &nbsp; Video-grapher</span></span></h2>
             <p>
               As a videographer and advanced editor, I specialize in creating cinematic wedding films and event short films that beautifully capture the essence of each moment. With extensive experience in both shooting and editing, I combine a creative eye with technical precision to produce visually stunning films. My advanced editing skills allow me to craft seamless, engaging narratives that highlight the emotions and energy of weddings and events, ensuring that every project tells a unique and memorable story.
             </p>
@@ -106,7 +106,10 @@ export const About = () => {
               </div>
             </div>
             <div className="circle-text mx-auto  my-6">
-            <Link href={'#'} className=" relative w-[165px] h-[165px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group">
+              <Link
+                to="/portfolio"  
+                className="relative w-[165px] h-[165px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group"
+              >
                 <img
                   src="/rounded-text.png"
                   width={121}
@@ -114,8 +117,11 @@ export const About = () => {
                   alt="Spinning Image"
                   className="animate-spin-slow w-full max-w-[121px] max-h-[128px]"
                 />
-                {/* Centered arrow inside the image */}
-                <ArrowRightAltIcon sx={{ color: '#ffffff' }} className="absolute text-4xl group-hover:translate-x-2 transition-ll duration-300" />
+                
+                <ArrowRightAltIcon
+                  sx={{ color: '#ffffff' }}
+                  className="absolute text-4xl group-hover:translate-x-2 transition-all duration-300"
+                />
               </Link>
             </div>
           </div>
@@ -136,11 +142,11 @@ export const About = () => {
                     '.MuiTab-root': {
                       color: '#ffffff',
                       padding: '30px',
-                      fontSize: '12px', // Default font size
+                      fontSize: '12px', 
                     },
                     '.Mui-selected': { color: '#1e53ff', fontWeight: 'bold' },
                     '.MuiTab-root:hover': { color: '#928e9c' },
-                    width: '100%', // Ensure full width of tabs
+                    width: '100%', 
                     '@media (max-width: 768px)': {
                       '.MuiTab-root': {
                         fontSize: '0.9rem',
@@ -204,7 +210,7 @@ export const About = () => {
           <div className='image1'>
             <img src="/shadow.png" alt="" />
           </div>
-         
+
         </div>
       </div>
 

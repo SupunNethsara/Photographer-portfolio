@@ -32,7 +32,7 @@ export const Services = () => {
         <div className="model">
           <div className='heading'>
             <h4>Services</h4>
-            <h2>Overview.</h2>
+            <h2>Overview</h2>
             <p>With over 2+ Years of experience as a freelance video editor, I bring stories to life through compelling visuals and seamless storytelling. My passion for filmmaking and content creation drives me to craft engaging videos that captivate audiences. Whether it’s editing dynamic vlogs, promotional content, or cinematic short films, wedding films, I thrive on collaborating with clients to transform their visions into reality. Let’s create something amazing together!</p>
           </div>
           <div className='boxes-serv'>
